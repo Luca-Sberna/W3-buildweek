@@ -13,80 +13,117 @@
 </head>
 
 <body>
-
-    <div class="row">
+    <!-- container di tutto -->
+    <div id="cont" class="row ">
+        <!-- container della sezione centrale -->
         <main class="col bg-light order-2 px-5">
-            <div id="content" class="d-flex justify-content-between py-2">
-                <div> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+            <!-- parte sopra della canzone in primo piano -->
+            <div id="content" class="d-flex justify-content-between  py-2">
+                <div> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
                         class="bi bi-caret-left-square-fill rounded-circle" viewBox="0 0 16 16">
                         <path
                             d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm10.5 10V4a.5.5 0 0 0-.832-.374l-4.5 4a.5.5 0 0 0 0 .748l4.5 4A.5.5 0 0 0 10.5 12z" />
                     </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
                         class="bi bi-caret-right-square-fill rounded-circle" viewBox="0 0 16 16">
                         <path
                             d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.5 10a.5.5 0 0 0 .832.374l4.5-4a.5.5 0 0 0 0-.748l-4.5-4A.5.5 0 0 0 5.5 4v8z" />
                     </svg>
                 </div>
 
-
-                <div class=" dropdown rounded">
+                <!-- dropdown -->
+                <div class=" dropdown  rounded">
                     <button class="tastoUtente btn bg-black text-white dropdown-toggle" type="button"
                         data-bs-toggle="dropdown" aria-expanded="false"> <img src="https://via.placeholder.com/27"
                             class="rounded-circle" alt="...">
                         Lidia Nautilus Ambarabacci
                     </button>
-
                     <ul class=" dropdown-menu dropdown-menu-dark">
                         <li>
-                            <a class="menuaTendina dropdown-item active" href="#">
+                            <a class="menuaTendina dropdown-item bg-black" href="#">
                                 Account
                                 <span class="ml-5"><i class="bi bi-arrow-up-right-square"></i></span>
                             </a>
                         </li>
-                        <li><a class="menuaTendina dropdown-item" href="#">Profilo</a></li>
-                        <li><a class="menuaTendina dropdown-item" href="#"> Effettua l'upgrade a premium <span><i
-                                        class="bi bi-arrow-up-right-square"></i></span></a>
+                        <li><a class="menuaTendina dropdown-item bg-black" href="#">Profilo</a></li>
+                        <li><a class="menuaTendina dropdown-item bg-black" href="#"> Effettua l'upgrade a premium
+                                <span><i class="bi bi-arrow-up-right-square"></i></span></a>
                         </li>
-                        <li><a class="menuaTendina dropdown-item" href="#">Impostazioni</a></li>
+                        <li><a class="menuaTendina dropdown-item bg-black" href="#">Impostazioni</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="menuaTendina dropdown-item" href="#">Esci</a></li>
+                        <li><a class="menuaTendina dropdown-item bg-black" href="#">Esci</a></li>
                     </ul>
                 </div>
             </div>
 
-            <div class="border row bg-secondary">
+            <!-- container canzone in primo piano -->
+            <div id="cont-song" class="border row bg-secondary">
                 <div class="col-3 py-4">
                     <img class="img-fluid" src="assets/imgs/main/image-19.jpg" alt="img">
                 </div>
+                <div class="col ">
+                    <div class="text-white">
+                        <p class="text-uppercase fw-bold">album</p>
+                        <h1 class="title-song d-inline-block fw-bold  text-uppercase flex-grow">viola </h1>
+                        <span class=" title-song fw-bold flex-grow"> (feat. Salmo)</span>
+                        <p class="flex-grow pb-3">Fedez,Salmo</p>
+                        <p class="flex-grow pb-3">Ascolta il nuovo singolo di Fedez e Salmo!</p>
+                        <div class="d-flex gap-4 align-items-center pb-2">
+                            <button type="button" class="btn-song btn btn-success align-middle text-black">Play</button>
+                            <button type="button"
+                                class="btn-song btn btn-dark text-white border-white align-middle">Salva</button>
+                            <a href="#" class=" text-light align-middle justify-content-center"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                    class="bi bi-three-dots" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                                </svg> </a>
 
-                <div class="col">
-                    <div>
-                        <p class="text-uppercase">album</p>
-                        <h1 class="d-inline-block fw-bold fs-1 text-uppercase">viola </h1>
-                        <span class="fs-1 fw-bold"> (feat. Salmo)</span>
-                        <p>Fedez,Salmo</p>
-                        <p>Ascolta il nuovo singolo di Fedez e Salmo!</p>
-                        <div class="">
-                            <button class="btn btn-success rounded align-middle">Play</button>
-                            <button class="btn btn-outline-dark rounded align-middle">Salva</button>
-                            <a href="#" class="fs-1 text-decoration-none text-light align-middle ">...</a>
+
                         </div>
                     </div>
-
                 </div>
-                <div class="col-3">
-                    <span class="badge text-bg-dark text-uppercase">nascondi annunci</span>
+                <div class="col-2 position-relative">
+                    <div class="">
+                        <span
+                            class="nascondiAnnunci position-absolute top-0 end-0 d-flex badge text-secondary text-bg-dark text-uppercase justify-content-center m-3 ">nascondi
+                            annunci</span>
+                    </div>
                 </div>
             </div>
+
+            <!-- griglia buonasera -->
+            <h3>Buonasera</h3>
+            <div class="row gap-4">
+                <div class="col-3 p-0   d-flex align-items-center bg-dark">
+                    <div><img class="img-fluid" src="assets/imgs/main/image-1.jpg" alt="cover-song"></div>
+                    <div>
+                        <h6 class="m-0 ps-2 text-light">early stage emily syndrome</h6>
+                    </div>
+                </div>
+
+                <div class="col-3 p-0   d-flex align-items-center bg-dark">
+                    <div><img class="img-fluid" src="assets/imgs/main/image-1.jpg" alt="cover-song"></div>
+                    <div>
+                        <h6 class="m-0 ps-2 text-light">early stage emily syndrome</h6>
+                    </div>
+                </div>
+
+                <div class="col-3 p-0  d-flex align-items-center bg-dark">
+                    <div><img class="img-fluid" src="assets/imgs/main/image-1.jpg" alt="cover-song"></div>
+                    <div>
+                        <h6 class="m-0 ps-2 text-light">early stage emily syndrome</h6>
+                    </div>
+                </div>
+            </div>
+
         </main>
 
-
+        <!-- sidebar di sinistra -->
         <aside class="col-3 bg-black order-1 ">
             <div id="sidebar" class="ps-2 ">
-
 
                 <a href="#"><svg id="logo" viewBox="0 0 1134 340" class="spotify-logo--text pt-1"
                         xmlns="http://www.w3.org/2000/svg">
@@ -97,15 +134,15 @@
                     </svg> </a>
 
                 <div class="navigation ">
-                    <ul class="nav-link pb-3">
+                    <ul class=" nav-link pb-3">
                         <li>
                             <a href="index.html" style="text-decoration: none;">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                    class="icon-nav bi bi-house-door" viewBox="0 0 16 16">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                    class="icon-nav bi bi-house-door " viewBox="0 0 16 16">
                                     <path
                                         d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z" />
                                 </svg>
-                                <span class="btn homepage text-light">Home</span></a>
+                                <span class="link-nav btn homepage ">Home</span></a>
                         </li>
 
                         <li>
@@ -115,7 +152,7 @@
                                     <path
                                         d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                                 </svg>
-                                <span class="btn paginaRicerca text-light">Cerca</span></a>
+                                <span class="link-nav btn paginaRicerca ">Cerca</span></a>
                         </li>
 
                         <li>
@@ -127,7 +164,7 @@
                                     <path d="M11 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 16 2.22V4l-5 1V2.82z" />
                                     <path fill-rule="evenodd"
                                         d="M0 11.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 7H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 3H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z" />
-                                </svg><span class="btn laTuaLibreria text-light">La tua libreria</span></a>
+                                </svg><span class="link-nav btn ">La tua libreria</span></a>
                         </li>
                     </ul>
                 </div>
@@ -142,30 +179,33 @@
                                         d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
                                     <path
                                         d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-                                </svg> <span class="btn sub-nav-icon text-light text-nowrap">Crea playlist</span></a>
+                                </svg> <span class="link-nav btn sub-nav-icon  text-nowrap">Crea
+                                    playlist</span></a>
+                        </li>
+
+                        <li>
+                            <a href="index.html" style="text-decoration: none;">
+                                <div class="cuoricino d-inline-block"> <svg role="img" height="12" width="12"
+                                        aria-hidden="true" viewBox="0 0 16 16" class=" Svg-sc-1bi12j5-0 EQkJl"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill="white" ;
+                                            d="M15.724 4.22A4.313 4.313 0 0012.192.814a4.269 4.269 0 00-3.622 1.13.837.837 0 01-1.14 0 4.272 4.272 0 00-6.21 5.855l5.916 7.05a1.128 1.128 0 001.727 0l5.916-7.05a4.228 4.228 0 00.945-3.577z">
+                                        </path>
+                                    </svg> </div><span class=" link-nav  btn sub-nav-icon  text-nowrap">Brani
+                                    che ti
+                                    piacciono</span>
+                            </a>
                         </li>
 
                         <li>
                             <a href="index.html" style="text-decoration: none;"><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="16" height="16" fill="currentColor" class="icon-nav bi bi-bookmark-heart"
-                                    viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z" />
-                                    <path
-                                        d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
-                                </svg><span class="btn sub-nav-icon text-light text-nowrap">Brani che ti
-                                    piacciono</span></a>
-                        </li>
-
-                        <li>
-                            <a href="index.html" style="text-decoration: none;"><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="16" height="16" fill="currentColor" class="icon-nav bi bi-bookmark-plus"
+                                    width="16" height="16" fill="currentColor" class=" icon-nav bi bi-bookmark-plus"
                                     viewBox="0 0 16 16">
                                     <path
                                         d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
                                     <path
                                         d="M8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z" />
-                                </svg><span class="  btn sub-nav-icon text-light text-nowrap">I tuoi
+                                </svg><span class="link-nav btn sub-nav-icon  text-nowrap">I tuoi
                                     episodi</span></a>
                         </li>
                     </ul>
@@ -215,18 +255,23 @@
                         <li>
                             <a href="">Zecchino d'oro Compilation 01-02</a>
                         </li>
+
                         <li>
                             <a href="">Zecchino d'oro Compilation 02-03 </a>
                         </li>
+
                         <li>
                             <a href="">Zecchino d'oro Compilation 03-04</a>
                         </li>
+
                         <li>
                             <a href="">Zecchino d'oro Compilation 04-05</a>
                         </li>
+
                         <li>
                             <a href="">Zecchino d'oro Compilation 06-07</a>
                         </li>
+
                         <li>
                             <a href="">Zecchino d'oro Compilation 07-08</a>
                         </li>
@@ -237,14 +282,15 @@
             </div>
         </aside>
 
+        <!-- sidebar destra friends -->
         <aside class=" col-2 order-3 bg-black ps-1">
             <div>
 
                 <div id="friends" class="d-flex justify-content-between align-items-center">
                     <h6 class="fw-bold text-white m-0 ">Attività amici</h6>
                     <div class="text-secondary fs-5 d-flex align-items-center">
-                        <span><i class="bi bi-person-add me-2"></i></span>
-                        <span><i class="bi bi-x pe-2"></i> </span>
+                        <span><i class="icon-friends-top bi bi-person-add me-2"></i></span>
+                        <span><i class="icon-friends-top bi bi-x pe-2"></i> </span>
                     </div>
                 </div>
 
@@ -255,14 +301,14 @@
 
 
                     <div class="d-flex flex-column col-6 p-0">
-                        <h6 class="title-friends mb-0 pt-1 text-secondary flex-nowrap">Charlie Hookham</h6>
-                        <p class="para-friends mb-0 pt-1 text-secondary  flex-nowrap">In Camera • Yuni Zooma</p>
-                        <p class="para-friends text-uppercase text-secondary"> <span> <i class="bi bi-disc"></i>
+                        <h6 class="title-friends mb-0 pt-1  flex-nowrap">Charlie Hookham</h6>
+                        <p class="para-friends mb-0 pt-1   flex-nowrap">In Camera • Yuni Zooma</p>
+                        <p class="para-friends text-uppercase "> <span> <i class="bi bi-disc"></i>
                             </span>Ep IIII</p>
                     </div>
 
                     <div class="col-3">
-                        <p class="para-friends flex-nowrap p-0 text-secondary">4 ore</p>
+                        <p class="para-friends flex-nowrap p-0 ">4 ore</p>
                     </div>
                 </div>
 
@@ -274,14 +320,14 @@
 
 
                     <div class="d-flex flex-column col-6 p-0">
-                        <h6 class="title-friends mb-0 pt-1 text-secondary flex-nowrap">Valeria Traverso</h6>
-                        <p class="para-friends mb-0 pt-1 text-secondary  flex-nowrap">New Kings • Sleeping Wolf</p>
-                        <p class="para-friends  text-secondary"> <span> <i class="bi bi-music-note-beamed"></i>
+                        <h6 class="title-friends mb-0 pt-1  flex-nowrap">Valeria Traverso</h6>
+                        <p class="para-friends mb-0 pt-1   flex-nowrap">New Kings • Sleeping Wolf</p>
+                        <p class="para-friends  "> <span> <i class="bi bi-music-note-beamed"></i>
                             </span>Twint Badass mood</p>
                     </div>
 
                     <div class="col-3">
-                        <p class="para-friends flex-nowrap p-0 text-secondary">3 giorni</p>
+                        <p class="para-friends flex-nowrap p-0 ">3 giorni</p>
                     </div>
                 </div>
 
@@ -292,14 +338,14 @@
 
 
                     <div class="d-flex flex-column col-6 p-0">
-                        <h6 class="title-friends mb-0 pt-1 text-secondary flex-nowrap">lightdark02</h6>
-                        <p class="para-friends mb-0 pt-1 text-secondary  flex-nowrap">Aimed to Kill • Jade LeMac</p>
-                        <p class="para-friends  text-secondary"> <span> <i class="bi bi-disc"></i>
+                        <h6 class="title-friends mb-0 pt-1  flex-nowrap">lightdark02</h6>
+                        <p class="para-friends mb-0 pt-1   flex-nowrap">Aimed to Kill • Jade LeMac</p>
+                        <p class="para-friends  "> <span> <i class="bi bi-disc"></i>
                             </span>Aimed to Kill</p>
                     </div>
 
                     <div class="col-3">
-                        <p class="para-friends flex-nowrap p-0 text-secondary">8 ore</p>
+                        <p class="para-friends flex-nowrap p-0 ">8 ore</p>
                     </div>
                 </div>
 

@@ -1,5 +1,31 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    background-color: rgb(31, 27, 27);
+}
+
 #logo {
     width: 130px;
+}
+
+svg,
+img,
+h1,
+.title-song,
+.icon-nav,
+.link-nav,
+.para-friends,
+.title-friends,
+.rounded-circle,
+.nascondiAnnunci,
+.icon-friends-top {
+    cursor: pointer;
 }
 
 .icon-nav {
@@ -17,6 +43,18 @@
     width: 24px;
 }
 
+p {
+    margin: 0;
+}
+
+.badge {
+    width: 9rem;
+}
+
+#cont {
+    min-height: 100vh;
+}
+
 /* .sub-nav-icon {
     width: 90px;
 } */
@@ -27,8 +65,6 @@
     border-radius: 23px;
     color: #fff;
     cursor: pointer;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     gap: 8px;
     height: 32px;
@@ -89,8 +125,7 @@
     vertical-align: baseline
 }
 
-.playList-host-overflowplayList-padding,
-.playList-viewport {
+.playList-host-overflow {
     overflow: hidden;
 }
 
@@ -111,7 +146,7 @@
 
 .playList {
     overflow-y: scroll;
-    height: 280px;
+    height: 350px;
 }
 
 ::-webkit-scrollbar {
@@ -140,4 +175,42 @@
 .title-friends {
     font-size: 14px;
     font-weight: bold;
+}
+
+.icon-nav:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.title-song {
+    font-size: 3.7rem;
+
+}
+
+.cuoricino {
+    background: linear-gradient (135deg, #450af5, #c4efd9);
+}
+
+
+
+#cont-song {
+    min-height: 18rem;
+}
+
+.title-friends,
+.para-friends,
+.icon-nav,
+.link-nav {
+    color: gray;
+}
+
+.icon-friends-top:hover,
+.icon-nav:hover,
+.link-nav:hover,
+.para-friends:hover,
+.title-friends:hover,
+.rounded-circle:hover,
+.nascondiAnnunci:hover {
+    transform: scale(1.1);
+    color: white;
 }
