@@ -236,7 +236,7 @@ p {
 
 
 main {
-    height: 89vh;
+    height: 100vh;
     margin-bottom: 0;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -295,12 +295,7 @@ main {
   .artistButton button:hover {
     color: white;
   }
-  .artistButton button.play {
-    background: transparent;
-    font-size: 3em;
-    color: #1db954;
-    text-align: center;
-  }
+  
   .artistButton button.follow {
     border: 1px;
     font-size: 12px;
