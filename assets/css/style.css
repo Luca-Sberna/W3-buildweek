@@ -295,16 +295,13 @@ main {
   .artistButton button:hover {
     color: white;
   }
-  
-  .artistButton button.follow {
-    border: 1px;
-    font-size: 12px;
-    font-weight: 900;
-    border-radius: 5px;
-    aspect-ratio: auto;
-    padding: 6px 10px;
+.artistButton button.playBtn:hover {
+    color: black;
   }
-  .artistButton button.follow:hover {
+  
+
+  .artistButton button.followBtn:hover,
+  .threeDots:hover {
     border: 1px inset white;
   }
   
