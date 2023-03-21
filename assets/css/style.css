@@ -295,13 +295,16 @@ main {
   .artistButton button:hover {
     color: white;
   }
-.artistButton button.playBtn:hover {
-    color: black;
-  }
+
   
 
-  .artistButton button.followBtn:hover,
-  .threeDots:hover {
-    border: 1px inset white;
-  }
   
+.artistiNomi{  
+    text-decoration: none;
+    
+
+}
+.artistiNomi:hover{  
+    text-decoration: underline;  
+
+}
