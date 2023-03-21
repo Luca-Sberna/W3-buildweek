@@ -87,11 +87,10 @@ p {
     padding: 2px;
     position: relative;
     touch-action: manipulation;
-    width: 148px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
     overflow: hidden;
-
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 148px;
 }
 
 .menuaTendina {
@@ -304,21 +303,23 @@ main {
 
 .artistButton button:hover {
     color: white;
-  }
+}
 
-  
 
-  
-.artistiNomi{  
+
+
+.artistiNomi {
     text-decoration: none;
-    
+
 
 }
-.artistiNomi:hover{  
-    text-decoration: underline;  
+
+.artistiNomi:hover {
+    text-decoration: underline;
 
 }
-.threeDots.btn:hover{
+
+.threeDots.btn:hover {
     background-color: #212529
 }
 
