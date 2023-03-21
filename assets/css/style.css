@@ -347,6 +347,8 @@ main {
 .artistButton button.follow:hover {
     border: 1px inset white;
 }
-.installApp{
-    width: 100%;
+
+
+.img-album {
+    box-shadow: 3px 3px 30px 5px rgb(59, 59, 59);
 }
