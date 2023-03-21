@@ -10,9 +10,23 @@ body {
     background-color: rgb(31, 27, 27);
 }
 
+#content {
+    z-index: 100;
+
+}
+
+main {
+    height: 100vh;
+    margin-bottom: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 99;
+}
+
 #logo {
     width: 130px;
 }
+
 
 svg,
 img,
@@ -24,7 +38,8 @@ h1,
 .title-friends,
 .rounded-circle,
 .nascondiAnnunci,
-.icon-friends-top {
+.icon-friends-top,
+main section .col {
     cursor: pointer;
 }
 
@@ -55,9 +70,6 @@ p {
     min-height: 100vh;
 }
 
-/* .sub-nav-icon {
-    width: 90px;
-} */
 .tastoUtente {
     align-items: center;
     background-color: rgba(0, 0, 0, 0.7);
@@ -211,6 +223,10 @@ p {
 .title-friends:hover,
 .rounded-circle:hover,
 .nascondiAnnunci:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     color: white;
+}
+
+main section .col:hover {
+    transform: scale(1.05);
 }
