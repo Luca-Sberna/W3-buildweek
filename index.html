@@ -16,9 +16,11 @@
     <!-- container di tutto -->
     <div id="cont" class="row ">
         <!-- container della sezione centrale -->
-        <main class="col-7 bg-dark order-2 px-4 pb-4">
+        <main id="homepage-body" class="col-7  order-2 px-4 pb-4">
             <!--top-bar parte sopra della canzone in primo piano -->
-            <div id="content" class="d-flex justify-content-between sticky-top py-2 bg-dark row">
+            <div id="content" class="d-flex justify-content-between sticky-top py-2  row"
+                style="background: rgb(33,33,33);"> <!-- style da spostare -->
+
                 <div class="col p-0 d-flex gap-1">
                     <div class="flex-nowrap">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
@@ -43,7 +45,7 @@
                 <div class="col p-0 flex-grow"></div>
                 <!-- dropdown -->
                 <div class=" dropdown p-0 rounded col ">
-                    <button class="tastoUtente btn bg-black text-white dropdown-toggle " type="button"
+                    <button class="tastoUtente btn bg-black text-white fw-bold dropdown-toggle " type="button"
                         data-bs-toggle="dropdown" aria-expanded="false"> <img src="https://via.placeholder.com/27"
                             class="rounded-circle" alt="...">
                         Lidia Nautilus Ambarabacci
@@ -69,9 +71,9 @@
             </div>
 
             <!-- container canzone in primo piano -->
-            <div id="cont-song" class="border row bg-secondary">
+            <div id="cont-song" class="border row border-0">
                 <div class="col-3 py-4">
-                    <img class="img-fluid" src="assets/imgs/main/image-19.jpg" alt="img">
+                    <img class="img-fluid" src="assets/imgs/main/image-12.jpg" alt="img">
                 </div>
                 <div class="col ">
                     <div class="text-white">
@@ -83,19 +85,19 @@
                         <p class="flex-grow pb-3"> Ascolta il nuovo singolo di Fedeze Salmo!</p>
                         <div class="d-flex gap-4 align-items-center pb-2">
                             <button type="button"
-                                class="btn-song btn  btn-success align-middle text-black">Play</button>
+                                class="btn-song btn rounded-pill btn-primary align-middle text-black px-4 py-2">Play</button>
                             <button type="button"
-                                class="btn-song btn btn-dark text-white  border-white align-middle">Salva</button>
-                            <button type="button" class="threeDots btn btn-secondary fw-bold text-white fs-1"><i
+                                class="btn-song btn btn-black text-white rounded-pill border-white align-middle px-4 py-2">Salva</button>
+                            <button type="button" class="threeDots btn  fw-bold text-white fs-1"><i
                                     class="bi bi-three-dots"></i></button>
 
                         </div>
                     </div>
                 </div>
-                <div class="col-2 position-relative">
+                <div class="col-2 position-relative opacity-25">
                     <div class="">
                         <span
-                            class="nascondiAnnunci position-absolute top-0 end-0 d-flex badge text-secondary text-bg-dark text-uppercase justify-content-center m-3 ">nascondi
+                            class="nascondiAnnunci position-absolute top-0 end-0 d-flex badge text-light text-uppercase justify-content-center m-3 ">nascondi
                             annunci</span>
                     </div>
                 </div>
@@ -105,7 +107,7 @@
             <section>
                 <h3 class="row py-3 fw-bold text-light mb-0">Buonasera</h3>
                 <div class="row gap-3 pb-2">
-                    <div class="col  p-0  d-flex align-items-center bg-secondary rounded">
+                    <div class="first-section  col p-0 d-flex align-items-center rounded">
                         <div class="col-3"><img class="img-fluid rounded-start" src="assets/imgs/main/image-1.jpg"
                                 alt="cover-song">
                         </div>
@@ -114,7 +116,7 @@
                         </div>
                     </div>
 
-                    <div class="col p-0  d-flex align-items-center bg-secondary rounded">
+                    <div class="first-section  col p-0 d-flex align-items-center rounded">
                         <div class="col-3"><img class="img-fluid rounded-start" src="assets/imgs/main/image-1.jpg"
                                 alt="cover-song">
                         </div>
@@ -123,7 +125,7 @@
                         </div>
                     </div>
 
-                    <div class="col p-0 d-flex align-items-center bg-secondary rounded">
+                    <div class="first-section  col p-0 d-flex align-items-center rounded">
                         <div class="col-3"><img class="img-fluid rounded-start" src="assets/imgs/main/image-1.jpg"
                                 alt="cover-song">
                         </div>
@@ -134,8 +136,8 @@
 
                 </div>
 
-                <div class="row gap-3">
-                    <div class="col p-0 d-flex align-items-center bg-secondary rounded">
+                <div class=" row gap-3">
+                    <div class="first-section col p-0 d-flex align-items-center rounded">
                         <div class="col-3"><img class="img-fluid rounded-start" src="assets/imgs/main/image-1.jpg"
                                 alt="cover-song">
                         </div>
@@ -144,7 +146,7 @@
                         </div>
                     </div>
 
-                    <div class="col p-0 d-flex align-items-center bg-secondary rounded">
+                    <div class="first-section  col p-0 d-flex align-items-center rounded">
                         <div class="col-3"><img class="img-fluid rounded-start" src="assets/imgs/main/image-1.jpg"
                                 alt="cover-song">
                         </div>
@@ -153,7 +155,7 @@
                         </div>
                     </div>
 
-                    <div class="col p-0 d-flex align-items-center bg-secondary rounded">
+                    <div class="first-section  col p-0 d-flex align-items-center rounded">
                         <div class="col-3"><img class="img-fluid rounded-start" src="assets/imgs/main/image-1.jpg"
                                 alt="cover-song">
                         </div>
@@ -168,13 +170,13 @@
             <!--seconda sezione del main , card in row  -->
             <div class="d-flex justify-content-between py-4 align-items-center">
                 <h5 class="row fw-bold text-light">Altro di ciò che ti piace</h5>
-                <span class=" text-uppercase ">
-                    <h6>visualizza tutto</h6>
+                <span class=" text-uppercase text-white">
+                    <a href="#" class="nav-link">visualizza tutto</a>
                 </span>
             </div>
 
             <div class="row gap-2">
-                <div class="card col p-0">
+                <div class="second-section text-white card col p-0">
                     <img src="assets/imgs/main/image-10.jpg" class="card-img-top img-fluid rounded p-2" alt="...">
                     <div class="card-body p-2">
                         <h6 class="card-title ">lollo</h6>
@@ -183,7 +185,7 @@
                     </div>
                 </div>
 
-                <div class="card col p-0">
+                <div class="second-section text-white card col p-0">
                     <img src="assets/imgs/main/image-10.jpg" class="card-img-top img-fluid rounded  p-2" alt="...">
                     <div class="card-body p-2">
                         <h6 class="card-title">lollo</h6>
@@ -193,7 +195,7 @@
                     </div>
                 </div>
 
-                <div class="card col p-0">
+                <div class="second-section text-white card col p-0">
                     <img src="assets/imgs/main/image-10.jpg" class="card-img-top img-fluid rounded p-2" alt="...">
                     <div class="card-body p-2">
                         <h6 class="card-title">lollo</h6>
@@ -203,7 +205,7 @@
                     </div>
                 </div>
 
-                <div class="card col p-0">
+                <div class="second-section text-white card col p-0">
                     <img src="assets/imgs/main/image-10.jpg" class="card-img-top img-fluid rounded p-2" alt="...">
                     <div class="card-body p-2">
                         <h6 class="card-title ">lollo</h6>
@@ -213,7 +215,7 @@
                     </div>
                 </div>
 
-                <div class="card col p-0">
+                <div class="second-section text-white card col p-0">
                     <img src="assets/imgs/main/image-10.jpg" class="card-img-top img-fluid rounded p-2" alt="...">
                     <div class="card-body p-2">
                         <h6 class="card-title">lollo</h6>
@@ -229,17 +231,17 @@
 
         <!-- sidebar di sinistra -->
         <aside class="col-3 bg-black order-1 ">
-            <div id="sidebar">
+            <div id="sidebar" class="ps-1">
 
-                <a href="index.html"><svg id="logo" viewBox="0 0 1134 340" class="spotify-logo--text py-2 ps-3 "
+                <a href="index.html"><svg id="logo" viewBox="0 0 1134 340" class="spotify-logo--text py-3 ps-2 "
                         xmlns="http://www.w3.org/2000/svg">
-                        <title>Spotify</title>
+                        <title>Bluetify</title>
                         <path fill="currentColor"
                             d="M8 171c0 92 76 168 168 168s168-76 168-168S268 4 176 4 8 79 8 171zm230 78c-39-24-89-30-147-17-14 2-16-18-4-20 64-15 118-8 162 19 11 7 0 24-11 18zm17-45c-45-28-114-36-167-20-17 5-23-21-7-25 61-18 136-9 188 23 14 9 0 31-14 22zM80 133c-17 6-28-23-9-30 59-18 159-15 221 22 17 9 1 37-17 27-54-32-144-35-195-19zm379 91c-17 0-33-6-47-20-1 0-1 1-1 1l-16 19c-1 1-1 2 0 3 18 16 40 24 64 24 34 0 55-19 55-47 0-24-15-37-50-46-29-7-34-12-34-22s10-16 23-16 25 5 39 15c0 0 1 1 2 1s1-1 1-1l14-20c1-1 1-1 0-2-16-13-35-20-56-20-31 0-53 19-53 46 0 29 20 38 52 46 28 6 32 12 32 22 0 11-10 17-25 17zm95-77v-13c0-1-1-2-2-2h-26c-1 0-2 1-2 2v147c0 1 1 2 2 2h26c1 0 2-1 2-2v-46c10 11 21 16 36 16 27 0 54-21 54-61s-27-60-54-60c-15 0-26 5-36 17zm30 78c-18 0-31-15-31-35s13-34 31-34 30 14 30 34-12 35-30 35zm68-34c0 34 27 60 62 60s62-27 62-61-26-60-61-60-63 27-63 61zm30-1c0-20 13-34 32-34s33 15 33 35-13 34-32 34-33-15-33-35zm140-58v-29c0-1 0-2-1-2h-26c-1 0-2 1-2 2v29h-13c-1 0-2 1-2 2v22c0 1 1 2 2 2h13v58c0 23 11 35 34 35 9 0 18-2 25-6 1 0 1-1 1-2v-21c0-1 0-2-1-2h-2c-5 3-11 4-16 4-8 0-12-4-12-12v-54h30c1 0 2-1 2-2v-22c0-1-1-2-2-2h-30zm129-3c0-11 4-15 13-15 5 0 10 0 15 2h1s1-1 1-2V93c0-1 0-2-1-2-5-2-12-3-22-3-24 0-36 14-36 39v5h-13c-1 0-2 1-2 2v22c0 1 1 2 2 2h13v89c0 1 1 2 2 2h26c1 0 1-1 1-2v-89h25l37 89c-4 9-8 11-14 11-5 0-10-1-15-4h-1l-1 1-9 19c0 1 0 3 1 3 9 5 17 7 27 7 19 0 30-9 39-33l45-116v-2c0-1-1-1-2-1h-27c-1 0-1 1-1 2l-28 78-30-78c0-1-1-2-2-2h-44v-3zm-83 3c-1 0-2 1-2 2v113c0 1 1 2 2 2h26c1 0 1-1 1-2V134c0-1 0-2-1-2h-26zm-6-33c0 10 9 19 19 19s18-9 18-19-8-18-18-18-19 8-19 18zm245 69c10 0 19-8 19-18s-9-18-19-18-18 8-18 18 8 18 18 18zm0-34c9 0 17 7 17 16s-8 16-17 16-16-7-16-16 7-16 16-16zm4 18c3-1 5-3 5-6 0-4-4-6-8-6h-8v19h4v-6h4l4 6h5zm-3-9c2 0 4 1 4 3s-2 3-4 3h-4v-6h4z">
                         </path>
                     </svg> </a>
 
-                <div class="navigation ps-4 ">
+                <div class="navigation ps-3 ">
                     <ul class=" nav-link pb-3 list-unstyled">
                         <li>
                             <a href="index.html" style="text-decoration: none;">
@@ -275,11 +277,11 @@
                     </ul>
                 </div>
 
-                <div class="sub-navigation ps-4 ">
+                <div class="sub-navigation ps-3 ">
                     <ul class="nav-link pb-3 list-unstyled">
                         <li>
                             <a href="index.html" style="text-decoration: none;"><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="16" height="16" fill="currentColor" class="icon-nav bi bi-plus-square"
+                                    width="25" height="25" fill="currentColor" class="icon-nav bi bi-plus-square"
                                     viewBox="0 0 16 16">
                                     <path
                                         d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
@@ -290,13 +292,13 @@
                         </li>
 
                         <li>
-                            <a href="index.html" style="text-decoration: none;">
-                                <svg role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16"
-                                    class=" Svg-sc-1bi12j5-0 ms-1" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill="white" ;
-                                        d="M15.724 4.22A4.313 4.313 0 0012.192.814a4.269 4.269 0 00-3.622 1.13.837.837 0 01-1.14 0 4.272 4.272 0 00-6.21 5.855l5.916 7.05a1.128 1.128 0 001.727 0l5.916-7.05a4.228 4.228 0 00.945-3.577z">
-                                    </path>
-                                </svg><span class=" link-nav  btn sub-nav-icon  text-nowrap ms-1">Brani
+                            <a href="index.html" style="text-decoration: none;"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="25" height="25" fill="currentColor"
+                                    class="icon-nav bi bi-bookmark-heart-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2 15.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v13.5zM8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z" />
+                                </svg>
+                                <span class=" link-nav  btn sub-nav-icon  text-nowrap ">Brani
                                     che ti
                                     piacciono</span>
                             </a>
@@ -304,7 +306,7 @@
 
                         <li>
                             <a href="index.html" style="text-decoration: none;"><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="16" height="16" fill="currentColor" class=" icon-nav bi bi-bookmark-plus"
+                                    width="25" height="25" fill="currentColor" class=" icon-nav bi bi-bookmark-plus"
                                     viewBox="0 0 16 16">
                                     <path
                                         d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
@@ -316,74 +318,105 @@
                     </ul>
                 </div>
 
-                <hr class=" bg-light">
+                <hr class="hr-sidebar bg-dark">
 
-                <div class="playList ps-4 ">
-                    <div class="playList-viewport playList-viewport-native-scrollbars-invisible "
-                        style="overflow-y: scroll;"></div>
+                <div class="">
+                    <div class="playList ps-3 ">
+                        <div class="playList-viewport playList-viewport-native-scrollbars-invisible"
+                            style="overflow-y: scroll;"></div>
 
-                    <ul class="list-unstyled ps-2 ">
-                        <li>
-                            <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 91-22</a>
-                        </li>
+                        <ul class="list-unstyled ps-2 lh-lg ">
+                            <li>
+                                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 91-22</a>
+                            </li>
 
-                        <li>
-                            <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 32-93</a>
-                        </li>
+                            <li>
+                                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 32-93</a>
+                            </li>
 
-                        <li>
-                            <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 93-94 </a>
-                        </li>
+                            <li>
+                                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 93-94 </a>
+                            </li>
 
-                        <li>
-                            <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 94-95 </a>
-                        </li>
+                            <li>
+                                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 94-95 </a>
+                            </li>
 
-                        <li>
-                            <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 95-96</a>
-                        </li>
+                            <li>
+                                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 95-96</a>
+                            </li>
 
-                        <li>
-                            <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 96-97</a>
-                        </li>
+                            <li>
+                                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 96-97</a>
+                            </li>
 
-                        <li>
-                            <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 97*98</a>
-                        </li>
-                        <li>
-                            <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 98-99</a>
-                        </li>
+                            <li>
+                                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 97*98</a>
+                            </li>
 
-                        <li>
-                            <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 99-2000</a>
-                        </li>
+                            <li>
+                                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 98-99</a>
+                            </li>
 
-                        <li>
-                            <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 01-02</a>
-                        </li>
+                            <li>
+                                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 99-2000</a>
+                            </li>
 
-                        <li>
-                            <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 02-03 </a>
-                        </li>
+                            <li>
+                                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 01-02</a>
+                            </li>
 
-                        <li>
-                            <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 03-04</a>
-                        </li>
+                            <li>
+                                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 96-97</a>
+                            </li>
 
-                        <li>
-                            <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 04-05</a>
-                        </li>
+                            <li>
+                                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 97*98</a>
+                            </li>
 
-                        <li>
-                            <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 06-07</a>
-                        </li>
+                            <li>
+                                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 98-99</a>
+                            </li>
 
-                        <li>
-                            <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 07-08</a>
-                        </li>
-                    </ul>
+                            <li>
+                                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 99-2000</a>
+                            </li>
 
+                            <li>
+                                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 01-02</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 02-03 </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 03-04</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 04-05</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 06-07</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 07-08</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+                <li class=" p-0 installApp fw-bold text-light list-unstyled ps-4 mt-4 "><a href="#"
+                        class="text-decoration-none text-light">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor"
+                            class="bi bi-arrow-down-circle me-2 " viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z" />
+                        </svg>
+                        Installa app</a>
+                </li>
 
             </div>
         </aside>

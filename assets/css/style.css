@@ -5,9 +5,14 @@
     box-sizing: border-box;
 }
 
+#homepage-body {
+    background: rgb(33, 33, 33);
+    background: linear-gradient(180deg, rgba(33, 33, 33, 1) 28%, rgba(39, 39, 39, 1) 100%);
+}
+
 body {
     overflow: hidden;
-    background-color: rgb(31, 27, 27);
+
 }
 
 #content {
@@ -25,6 +30,23 @@ main {
     overflow-y: scroll;
     overflow-x: hidden;
     z-index: 99;
+}
+
+#cont-song {
+    background: rgb(57, 57, 57);
+    background: linear-gradient(191deg, rgba(57, 57, 57, 1) 0%, rgba(42, 42, 42, 1) 0%, rgba(23, 23, 23, 1) 32%, rgba(10, 10, 10, 1) 68%, rgba(0, 0, 0, 1) 100%);
+}
+
+.nascondiAnnunci {
+    background-color: #43434369;
+}
+
+.first-section {
+    background-color: #434343;
+}
+
+.second-section {
+    background-color: #202020;
 }
 
 #logo {
@@ -83,12 +105,11 @@ p {
     display: block;
     gap: 8px;
     height: 32px;
-    justify-content: center;
     padding: 2px;
     position: relative;
     touch-action: manipulation;
-    overflow: hidden;
     text-overflow: ellipsis;
+    overflow: hidden;
     white-space: nowrap;
     width: 148px;
 }
@@ -166,7 +187,11 @@ p {
 
 .playList {
     overflow-y: scroll;
-    height: 350px;
+    height: 200px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {
@@ -233,19 +258,13 @@ p {
 .para-friends:hover,
 .title-friends:hover,
 .rounded-circle:hover,
-.nascondiAnnunci:hover {
-    transform: scale(1.1);
+.nascondiAnnunci:hover,
+.list-sidebar:hover {
+    transform: scale(1.03);
     color: white;
 }
 
 
-main {
-    height: 100vh;
-    margin-bottom: 0;
-    overflow-y: scroll;
-    overflow-x: hidden;
-
-}
 
 .intestazioneArtist {
     position: relative;
@@ -320,7 +339,7 @@ main {
 }
 
 .threeDots.btn:hover {
-    background-color: #212529
+    background-color: #212121
 }
 
 .artistButton button.play {
@@ -341,4 +360,14 @@ main {
 
 .artistButton button.follow:hover {
     border: 1px inset white;
+}
+
+
+.img-album {
+    box-shadow: 3px 3px 30px 5px rgb(59, 59, 59);
+}
+
+.hr-sidebar {
+    width: 28rem;
+    margin-left: 1.2rem;
 }
