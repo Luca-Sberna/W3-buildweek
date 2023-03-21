@@ -80,13 +80,18 @@ p {
     border-radius: 23px;
     color: #fff;
     cursor: pointer;
-    display: flex;
+    display: block;
     gap: 8px;
     height: 32px;
     justify-content: center;
     padding: 2px;
     position: relative;
     touch-action: manipulation;
+    width: 148px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
 }
 
 .menuaTendina {
