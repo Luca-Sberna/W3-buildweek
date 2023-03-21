@@ -217,9 +217,11 @@ p {
 .title-friends,
 .para-friends,
 .icon-nav,
+.list-sidebar,
 .link-nav {
   color: gray;
 }
+
 
 .icon-friends-top:hover,
 .icon-nav:hover,
