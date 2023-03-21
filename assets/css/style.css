@@ -10,6 +10,23 @@ body {
     background-color: rgb(31, 27, 27);
 }
 
+#content {
+    z-index: 100;
+    background-color: rgb(222, 192, 79);
+}
+
+#content svg {
+    white-space: nowrap;
+}
+
+main {
+    height: 100vh;
+    margin-bottom: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 99;
+}
+
 #logo {
     width: 130px;
 }
@@ -24,7 +41,8 @@ h1,
 .title-friends,
 .rounded-circle,
 .nascondiAnnunci,
-.icon-friends-top {
+.icon-friends-top,
+main section .col {
     cursor: pointer;
 }
 
@@ -55,9 +73,6 @@ p {
     min-height: 100vh;
 }
 
-/* .sub-nav-icon {
-    width: 90px;
-} */
 .tastoUtente {
     align-items: center;
     background-color: rgba(0, 0, 0, 0.7);
@@ -100,7 +115,8 @@ p {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 16px 24px 0px, rgba(0, 0, 0, 0.2) 0px 6px 8px 0px;
     box-sizing: border-box;
     color: rgb(179, 179, 179);
-    font-family: CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, Helvetica Neue, helvetica, arial, Hiragino Kaku Gothic Pro, Meiryo, MS Gothic, sans-serif;
+    font-family: CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva,
+        Helvetica Neue, helvetica, arial, Hiragino Kaku Gothic Pro, Meiryo, MS Gothic, sans-serif;
     line-height: 25.6px;
     list-style-image: none;
     list-style-position: outside;
@@ -122,7 +138,7 @@ p {
     padding-top: 4px;
     scrollbar-color: rgba(255, 255, 255, 0.3) rgba(0, 0, 0, 0);
     text-transform: none;
-    vertical-align: baseline
+    vertical-align: baseline;
 }
 
 .playList-host-overflow {
@@ -184,14 +200,16 @@ p {
 
 .title-song {
     font-size: 3.7rem;
-
 }
 
 .cuoricino {
     background: linear-gradient (135deg, #450af5, #c4efd9);
 }
 
-
+.title-album {
+    font-size: 75px;
+    font-weight: bold;
+}
 
 #cont-song {
     min-height: 18rem;
@@ -200,6 +218,7 @@ p {
 .title-friends,
 .para-friends,
 .icon-nav,
+.list-sidebar,
 .link-nav {
     color: gray;
 }
