@@ -347,3 +347,6 @@ main {
 .artistButton button.follow:hover {
     border: 1px inset white;
 }
+.installApp{
+    width: 100%;
+}
