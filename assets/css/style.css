@@ -308,3 +308,6 @@ main {
     text-decoration: underline;  
 
 }
+.threeDots.btn:hover{
+    background-color: #212529
+}
