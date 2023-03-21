@@ -223,3 +223,74 @@ main {
     overflow-x: hidden;
 
   }
+
+  .intestazioneArtist {
+    position: relative;
+    background-position-x: center;
+    background-position-y: 20%;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+  .intestazioneArtist h5 {
+    padding-left: 20px;
+    font-size: 5em;
+    color: white;
+    font-weight: 800;
+  }
+  .intestazioneArtist p {
+    padding-left: 20px;
+    font-size: 0.8em;
+    color: white;
+    margin: 0;
+  }
+  .intestazioneArtist p i {
+    color: #3d91f4;
+    font-size: 1.6em;
+  }
+  
+  
+  .bottoniArtista {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .bottoniArtista button {
+    padding: 3px 10px;
+    font-size: 1em;
+    border-radius: 100%;
+    margin-right: 10px;
+    border: none;
+    background: transparent;
+    color: rgb(159, 157, 157);
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  .artistButton button:hover {
+    color: white;
+  }
+  .artistButton button.play {
+    background: transparent;
+    font-size: 3em;
+    color: #1db954;
+    text-align: center;
+  }
+  .artistButton button.follow {
+    border: 1px;
+    font-size: 12px;
+    font-weight: 900;
+    border-radius: 5px;
+    aspect-ratio: auto;
+    padding: 6px 10px;
+  }
+  .artistButton button.follow:hover {
+    border: 1px inset white;
+  }
+  
