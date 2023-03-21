@@ -10,6 +10,22 @@ body {
   background-color: rgb(31, 27, 27);
 }
 
+#content {
+  z-index: 100;
+}
+
+#content svg {
+  white-space: nowrap;
+}
+
+main {
+  height: 100vh;
+  margin-bottom: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  z-index: 99;
+}
+
 #logo {
   width: 130px;
 }
@@ -24,7 +40,8 @@ h1,
 .title-friends,
 .rounded-circle,
 .nascondiAnnunci,
-.icon-friends-top {
+.icon-friends-top,
+main section .col {
   cursor: pointer;
 }
 
@@ -55,9 +72,6 @@ p {
   min-height: 100vh;
 }
 
-/* .sub-nav-icon {
-    width: 90px;
-} */
 .tastoUtente {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.7);
@@ -216,9 +230,4 @@ p {
 .nascondiAnnunci:hover {
   transform: scale(1.1);
   color: white;
-}
-
-.scroll {
-  height: 300px;
-  overflow: auto;
 }
