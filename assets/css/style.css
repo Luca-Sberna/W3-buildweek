@@ -27,6 +27,7 @@ main {
     z-index: 99;
 }
 
+
 #logo {
     width: 130px;
 }
@@ -167,8 +168,12 @@ p {
 }
 
 .playList {
-    overflow-y: scroll;
-    height: 350px;
+  overflow-y: scroll;
+  height: 200px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {
