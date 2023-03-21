@@ -18,28 +18,35 @@
         <!-- container della sezione centrale -->
         <main class="col-7  order-2 px-5 "min-vh-100 p-4 style="background: rgb(0,0,0);
         background: linear-gradient(0deg, rgba(0,0,0,1) 38%, rgba(68,64,64,1) 61%, rgba(222,192,79,1) 66%);">    
-            <!-- parte sopra della canzone in primo piano -->
-            <div id="content" class="d-flex justify-content-between  py-2">
-                <div> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
-                        class="bi bi-caret-left-square-fill rounded-circle" viewBox="0 0 16 16">
-                        <path
-                            d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm10.5 10V4a.5.5 0 0 0-.832-.374l-4.5 4a.5.5 0 0 0 0 .748l4.5 4A.5.5 0 0 0 10.5 12z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
-                        class="bi bi-caret-right-square-fill rounded-circle" viewBox="0 0 16 16">
-                        <path
-                            d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.5 10a.5.5 0 0 0 .832.374l4.5-4a.5.5 0 0 0 0-.748l-4.5-4A.5.5 0 0 0 5.5 4v8z" />
-                    </svg>
+            <!--top-bar parte sopra della canzone in primo piano -->
+            <div id="content" class="d-flex justify-content-between sticky-top py-2  row">
+                <div class="col p-0 d-flex gap-1">
+                    <div class="flex-nowrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            class="bi bi-caret-left-square-fill rounded-circle" viewBox="0 0 16 16">
+                            <path
+                                d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm10.5 10V4a.5.5 0 0 0-.832-.374l-4.5 4a.5.5 0 0 0 0 .748l4.5 4A.5.5 0 0 0 10.5 12z" />
+                        </svg>
+                    </div>
+                    <div class="flex-nowrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            class="bi bi-caret-right-square-fill rounded-circle" viewBox="0 0 16 16">
+                            <path
+                                d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.5 10a.5.5 0 0 0 .832.374l4.5-4a.5.5 0 0 0 0-.748l-4.5-4A.5.5 0 0 0 5.5 4v8z" />
+                        </svg>
+                    </div>
                 </div>
-
+                <div class="col p-0 flex-grow"></div>
+                <div class="col p-0 flex-grow"></div>
+                <div class="col p-0 flex-grow"></div>
                 <!-- dropdown -->
-                <div class=" dropdown  rounded">
-                    <button class="tastoUtente btn bg-black text-white dropdown-toggle" type="button"
+                <div class=" dropdown p-0 rounded col ">
+                    <button class="tastoUtente btn bg-black text-white dropdown-toggle " type="button"
                         data-bs-toggle="dropdown" aria-expanded="false"> <img src="https://via.placeholder.com/27"
                             class="rounded-circle" alt="...">
                         Lidia Nautilus Ambarabacci
                     </button>
-                    <ul class=" dropdown-menu dropdown-menu-dark">
+                    <ul class=" dropdown-menu dropdown-menu-dark ">
                         <li>
                             <a class="menuaTendina dropdown-item bg-black" href="#">
                                 Account
@@ -213,13 +220,12 @@
 
                         <li>
                             <a href="index.html" style="text-decoration: none;">
-                                <div class="cuoricino d-inline-block"> <svg role="img" height="12" width="12"
-                                        aria-hidden="true" viewBox="0 0 16 16" class=" Svg-sc-1bi12j5-0 EQkJl"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill="white" ;
-                                            d="M15.724 4.22A4.313 4.313 0 0012.192.814a4.269 4.269 0 00-3.622 1.13.837.837 0 01-1.14 0 4.272 4.272 0 00-6.21 5.855l5.916 7.05a1.128 1.128 0 001.727 0l5.916-7.05a4.228 4.228 0 00.945-3.577z">
-                                        </path>
-                                    </svg> </div><span class=" link-nav  btn sub-nav-icon  text-nowrap">Brani
+                                <svg role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16"
+                                    class=" Svg-sc-1bi12j5-0 ms-1" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="white" ;
+                                        d="M15.724 4.22A4.313 4.313 0 0012.192.814a4.269 4.269 0 00-3.622 1.13.837.837 0 01-1.14 0 4.272 4.272 0 00-6.21 5.855l5.916 7.05a1.128 1.128 0 001.727 0l5.916-7.05a4.228 4.228 0 00.945-3.577z">
+                                    </path>
+                                </svg><span class=" link-nav  btn sub-nav-icon  text-nowrap ms-1">Brani
                                     che ti
                                     piacciono</span>
                             </a>
@@ -240,68 +246,69 @@
                 </div>
 
                 <hr class=" bg-light">
+
                 <div class="playList">
                     <div class="playList-viewport playList-viewport-native-scrollbars-invisible "
                         style="overflow-y: scroll;"></div>
 
-                    <ul>
+                    <ul class="list-unstyled ps-2 ">
                         <li>
-                            <a href="">Zecchino d'oro Compilation 91-22</a>
+                            <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 91-22</a>
                         </li>
 
                         <li>
-                            <a href="">Zecchino d'oro Compilation 32-93</a>
+                            <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 32-93</a>
                         </li>
 
                         <li>
-                            <a href="">Zecchino d'oro Compilation 93-94 </a>
+                            <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 93-94 </a>
                         </li>
 
                         <li>
-                            <a href="">Zecchino d'oro Compilation 94-95 </a>
+                            <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 94-95 </a>
                         </li>
 
                         <li>
-                            <a href="">Zecchino d'oro Compilation 95-96</a>
+                            <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 95-96</a>
                         </li>
 
                         <li>
-                            <a href="">Zecchino d'oro Compilation 96-97</a>
+                            <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 96-97</a>
                         </li>
 
                         <li>
-                            <a href="">Zecchino d'oro Compilation 97*98</a>
+                            <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 97*98</a>
                         </li>
                         <li>
-                            <a href="">Zecchino d'oro Compilation 98-99</a>
-                        </li>
-
-                        <li>
-                            <a href="">Zecchino d'oro Compilation 99-2000</a>
+                            <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 98-99</a>
                         </li>
 
                         <li>
-                            <a href="">Zecchino d'oro Compilation 01-02</a>
+                            <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 99-2000</a>
                         </li>
 
                         <li>
-                            <a href="">Zecchino d'oro Compilation 02-03 </a>
+                            <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 01-02</a>
                         </li>
 
                         <li>
-                            <a href="">Zecchino d'oro Compilation 03-04</a>
+                            <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 02-03 </a>
                         </li>
 
                         <li>
-                            <a href="">Zecchino d'oro Compilation 04-05</a>
+                            <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 03-04</a>
                         </li>
 
                         <li>
-                            <a href="">Zecchino d'oro Compilation 06-07</a>
+                            <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 04-05</a>
                         </li>
 
                         <li>
-                            <a href="">Zecchino d'oro Compilation 07-08</a>
+                            <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 06-07</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 07-08</a>
                         </li>
                     </ul>
 

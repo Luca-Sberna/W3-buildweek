@@ -12,6 +12,7 @@ body {
 
 #content {
   z-index: 100;
+  background-color: rgb(222, 192, 79);
 }
 
 #content svg {
@@ -221,7 +222,6 @@ p {
 .link-nav {
   color: gray;
 }
-
 
 .icon-friends-top:hover,
 .icon-nav:hover,
