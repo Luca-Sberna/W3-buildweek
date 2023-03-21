@@ -1,34 +1,34 @@
 *,
 *:before,
 *:after {
-  margin: 0;
-  box-sizing: border-box;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-  overflow: hidden;
-  background-color: rgb(31, 27, 27);
+    overflow: hidden;
+    background-color: rgb(31, 27, 27);
 }
 
 #content {
-  z-index: 100;
-  background-color: rgb(222, 192, 79);
+    z-index: 100;
+    background-color: rgb(222, 192, 79);
 }
 
 #content svg {
-  white-space: nowrap;
+    white-space: nowrap;
 }
 
 main {
-  height: 100vh;
-  margin-bottom: 0;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  z-index: 99;
+    height: 100vh;
+    margin-bottom: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 99;
 }
 
 #logo {
-  width: 130px;
+    width: 130px;
 }
 
 svg,
@@ -43,176 +43,176 @@ h1,
 .nascondiAnnunci,
 .icon-friends-top,
 main section .col {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .icon-nav {
-  box-sizing: border-box;
-  color: rgb(255, 255, 255);
-  cursor: pointer;
-  fill: rgb(255, 255, 255);
-  flex-shrink: 0;
-  line-height: 25.6px;
-  list-style-image: none;
-  list-style-position: outside;
-  list-style-type: none;
-  scrollbar-color: rgba(255, 255, 255, 0.3) rgba(0, 0, 0, 0);
-  text-transform: none;
-  width: 24px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    fill: rgb(255, 255, 255);
+    flex-shrink: 0;
+    line-height: 25.6px;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    scrollbar-color: rgba(255, 255, 255, 0.3) rgba(0, 0, 0, 0);
+    text-transform: none;
+    width: 24px;
 }
 
 p {
-  margin: 0;
+    margin: 0;
 }
 
 .badge {
-  width: 9rem;
+    width: 9rem;
 }
 
 #cont {
-  min-height: 100vh;
+    min-height: 100vh;
 }
 
 .tastoUtente {
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.7);
-  border: 0;
-  border-radius: 23px;
-  color: #fff;
-  cursor: pointer;
-  display: flex;
-  gap: 8px;
-  height: 32px;
-  justify-content: center;
-  padding: 2px;
-  position: relative;
-  touch-action: manipulation;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 0;
+    border-radius: 23px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    gap: 8px;
+    height: 32px;
+    justify-content: center;
+    padding: 2px;
+    position: relative;
+    touch-action: manipulation;
 }
 
 .menuaTendina {
-  background-color: rgb(40, 40, 40);
-  border-bottom-color: rgb(179, 179, 179);
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  border-bottom-style: none;
-  border-bottom-width: 0px;
-  border-image-outset: 0;
-  border-image-repeat: stretch;
-  border-image-slice: 100%;
-  border-image-source: none;
-  border-image-width: 1;
-  border-left-color: rgb(179, 179, 179);
-  border-left-style: none;
-  border-left-width: 0px;
-  border-right-color: rgb(179, 179, 179);
-  border-right-style: none;
-  border-right-width: 0px;
-  border-top-color: rgb(179, 179, 179);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-top-style: none;
-  border-top-width: 0px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 16px 24px 0px, rgba(0, 0, 0, 0.2) 0px 6px 8px 0px;
-  box-sizing: border-box;
-  color: rgb(179, 179, 179);
-  font-family: CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva,
-    Helvetica Neue, helvetica, arial, Hiragino Kaku Gothic Pro, Meiryo, MS Gothic, sans-serif;
-  line-height: 25.6px;
-  list-style-image: none;
-  list-style-position: outside;
-  list-style-type: none;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top: 0px;
-  max-height: 658px;
-  max-width: 350px;
-  min-width: 160px;
-  outline-color: rgb(179, 179, 179);
-  outline-style: none;
-  outline-width: 0px;
-  overflow-y: auto;
-  padding-bottom: 4px;
-  padding-left: 4px;
-  padding-right: 4px;
-  padding-top: 4px;
-  scrollbar-color: rgba(255, 255, 255, 0.3) rgba(0, 0, 0, 0);
-  text-transform: none;
-  vertical-align: baseline;
+    background-color: rgb(40, 40, 40);
+    border-bottom-color: rgb(179, 179, 179);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-style: none;
+    border-bottom-width: 0px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-color: rgb(179, 179, 179);
+    border-left-style: none;
+    border-left-width: 0px;
+    border-right-color: rgb(179, 179, 179);
+    border-right-style: none;
+    border-right-width: 0px;
+    border-top-color: rgb(179, 179, 179);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-top-style: none;
+    border-top-width: 0px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 16px 24px 0px, rgba(0, 0, 0, 0.2) 0px 6px 8px 0px;
+    box-sizing: border-box;
+    color: rgb(179, 179, 179);
+    font-family: CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva,
+        Helvetica Neue, helvetica, arial, Hiragino Kaku Gothic Pro, Meiryo, MS Gothic, sans-serif;
+    line-height: 25.6px;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    max-height: 658px;
+    max-width: 350px;
+    min-width: 160px;
+    outline-color: rgb(179, 179, 179);
+    outline-style: none;
+    outline-width: 0px;
+    overflow-y: auto;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 4px;
+    scrollbar-color: rgba(255, 255, 255, 0.3) rgba(0, 0, 0, 0);
+    text-transform: none;
+    vertical-align: baseline;
 }
 
 .playList-host-overflow {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .playList-padding {
-  bottom: 0;
-  direction: inherit;
-  height: auto !important;
-  left: 0;
-  margin: 0;
-  overflow: visible;
-  padding: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: auto !important;
-  z-index: 0;
+    bottom: 0;
+    direction: inherit;
+    height: auto !important;
+    left: 0;
+    margin: 0;
+    overflow: visible;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto !important;
+    z-index: 0;
 }
 
 .playList {
-  overflow-y: scroll;
-  height: 350px;
+    overflow-y: scroll;
+    height: 350px;
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px rgb(51, 51, 51);
-  border-radius: 10px;
+    box-shadow: inset 0 0 5px rgb(51, 51, 51);
+    border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(85, 85, 85);
-  border-radius: 10px;
+    background: rgb(85, 85, 85);
+    border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #1d2db9;
+    background: #1d2db9;
 }
 
 .para-friends {
-  font-size: 10px;
-  font-weight: bold;
+    font-size: 10px;
+    font-weight: bold;
 }
 
 .title-friends {
-  font-size: 14px;
-  font-weight: bold;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .icon-nav:hover {
-  color: #fff;
-  text-decoration: none;
+    color: #fff;
+    text-decoration: none;
 }
 
 .title-song {
-  font-size: 3.7rem;
+    font-size: 3.7rem;
 }
 
 .cuoricino {
-  background: linear-gradient (135deg, #450af5, #c4efd9);
+    background: linear-gradient (135deg, #450af5, #c4efd9);
 }
 
 .title-album {
-  font-size: 75px;
-  font-weight: bold;
+    font-size: 75px;
+    font-weight: bold;
 }
 
 #cont-song {
-  min-height: 18rem;
+    min-height: 18rem;
 }
 
 .title-friends,
@@ -220,7 +220,7 @@ p {
 .icon-nav,
 .list-sidebar,
 .link-nav {
-  color: gray;
+    color: gray;
 }
 
 .icon-friends-top:hover,
@@ -230,6 +230,6 @@ p {
 .title-friends:hover,
 .rounded-circle:hover,
 .nascondiAnnunci:hover {
-  transform: scale(1.1);
-  color: white;
+    transform: scale(1.1);
+    color: white;
 }
