@@ -342,3 +342,8 @@ main {
 .artistButton button.follow:hover {
     border: 1px inset white;
 }
+
+
+.img-album {
+    box-shadow: 3px 3px 30px 5px rgb(59, 59, 59);
+}
