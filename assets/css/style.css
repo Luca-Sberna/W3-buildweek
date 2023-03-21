@@ -214,3 +214,12 @@ p {
     transform: scale(1.1);
     color: white;
 }
+
+
+main {
+    height: 89vh;
+    margin-bottom: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+  }
