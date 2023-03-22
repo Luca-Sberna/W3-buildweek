@@ -26,7 +26,7 @@
     <!-- container di tutto -->
     <div id="cont" class="row">
       <!-- container della sezione centrale -->
-      <main id="homepage-body" class="col-7 order-2 px-4 pb-4">
+      <main id="homepage-body" class="col order-2 px-4 pb-4">
         <!--top-bar parte sopra della canzone in primo piano -->
         <div
           id="content"
@@ -578,13 +578,13 @@
       </aside>
 
       <!-- sidebar destra friends -->
-      <aside class="col-2 order-3 bg-black ps-1">
+      <aside id="rightBar" class="col-2 order-3 bg-black ps-1">
         <div>
           <div id="friends" class="d-flex justify-content-between align-items-center py-4 ps-2">
             <h6 class="fw-bold text-white m-0">Attività amici</h6>
             <div class="text-secondary fs-5 d-flex align-items-center">
               <span><i class="icon-friends-top bi bi-person-add me-2"></i></span>
-              <span><i class="icon-friends-top bi bi-x pe-2"></i> </span>
+              <span id="close-friends"><i class="icon-friends-top bi bi-x pe-2"></i> </span>
             </div>
           </div>
 
@@ -650,5 +650,6 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>
