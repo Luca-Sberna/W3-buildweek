@@ -283,6 +283,11 @@ p {
   color: white;
 }
 
+.threeDots {
+    height: 4.6rem;
+
+}
+
 .intestazioneArtist {
   position: relative;
   background-position-x: center;
