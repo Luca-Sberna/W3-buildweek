@@ -237,7 +237,12 @@ p {
 }
 
 .title-song {
-  font-size: 3.7rem;
+  font-size: 3.2rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  padding-top: 1rem;
 }
 
 .title-album {
@@ -247,10 +252,6 @@ p {
 
 #cont-song {
   min-height: 18rem;
-}
-
-.icon-margin {
-  margin-right: 2.5rem;
 }
 
 .title-friends,
@@ -369,4 +370,8 @@ p {
 .hr-sidebar {
   width: 28rem;
   margin-left: 1.2rem;
+}
+
+.icon-margin {
+  margin-right: 2.5rem;
 }
