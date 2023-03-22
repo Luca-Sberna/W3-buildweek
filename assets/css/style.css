@@ -45,6 +45,9 @@ main {
 
 .nascondiAnnunci {
   background-color: #43434369;
+  white-space: nowrap;
+  z-index: 100;
+  margin-left: 10px;
 }
 
 .first-section {
