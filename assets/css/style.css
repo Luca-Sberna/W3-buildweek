@@ -39,6 +39,9 @@ main {
 
 .nascondiAnnunci {
     background-color: #43434369;
+    white-space: nowrap;
+    z-index: 100;
+    margin-left: 10px;
 }
 
 .first-section {
@@ -228,12 +231,15 @@ p {
 }
 
 .title-song {
-    font-size: 3.7rem;
+    font-size: 3.2rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    padding-top: 1rem;
 }
 
-.cuoricino {
-    background: linear-gradient (135deg, #450af5, #c4efd9);
-}
+
 
 .title-album {
     font-size: 75px;
