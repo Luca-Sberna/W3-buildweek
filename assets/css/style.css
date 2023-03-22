@@ -11,10 +11,10 @@
   padding-bottom: 20rem !important;
 }
 
-#Album-body {
+#album-body {
   background: rgba(68, 64, 64, 1);
-  background: linear-gradient(0deg, rgb(24, 23, 23) 30%, rgb(110, 95, 39) 55%, 55.5%, rgba(222, 192, 79, 1) 85%);
-  padding-bottom: 20rem !important;
+  background: linear-gradient(0deg, rgb(24, 23, 23) 60%, rgb(110, 95, 39) 75%, 55.5%, rgba(222, 192, 79, 1) 85%);
+  background-attachment: local;
 }
 
 body {
@@ -279,7 +279,7 @@ p {
 .list-sidebar:hover,
 .threeDots.btn:hover,
 .playBtn:hover {
-  transform: scale(1.04);
+  transform: scale(1.05);
   color: white;
 }
 
@@ -338,6 +338,13 @@ p {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+#artistaCaricato {
+  background-image: url("../imgs/main/image-12.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .artistButton button:hover {
