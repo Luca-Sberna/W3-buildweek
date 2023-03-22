@@ -366,10 +366,37 @@ p {
 }
 
 .hr-sidebar {
-    width: 28rem;
-    margin-left: 1.2rem;
+    margin-left: 0.8rem;
 }
 
 .icon-margin {
     margin-right: 1.5rem;
+}
+
+aside .nav-first svg {
+    fill: #b3b3b3;
+}
+
+aside .nav-second div {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+aside .nav-second div.playlist {
+    background-color: #b3b3b3;
+    fill: black;
+}
+
+aside .nav-second div.cuore {
+    fill: white;
+    background: linear-gradient(135deg, #450af5, #c4efd9);
+}
+
+aside .nav-second div.booksmark {
+    fill: #1ed760;
+    background-color: #006450;
 }
