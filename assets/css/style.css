@@ -216,7 +216,7 @@ p {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #1d2db9;
+    background: rgb(143, 143, 143);
 }
 
 .para-friends {
