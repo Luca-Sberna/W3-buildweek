@@ -275,8 +275,10 @@ p {
 .title-friends:hover,
 .rounded-circle:hover,
 .nascondiAnnunci:hover,
-.list-sidebar:hover {
-    transform: scale(1.03);
+.list-sidebar:hover,
+.threeDots.btn:hover,
+.playBtn:hover {
+    transform: scale(1.05);
     color: white;
 }
 
@@ -345,9 +347,8 @@ p {
     text-decoration: underline;
 }
 
-.threeDots.btn:hover {
-    background-color: #212121;
-}
+
+
 
 .artistButton button.play {
     background: transparent;
@@ -397,6 +398,10 @@ aside .nav-second div {
 aside .nav-second div.playlist {
     background-color: #b3b3b3;
     fill: black;
+}
+
+.playBtn {
+    font-size: 3.9rem;
 }
 
 aside .nav-second div.cuore {
