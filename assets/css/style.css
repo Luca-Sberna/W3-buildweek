@@ -33,11 +33,12 @@ body {
 }
 
 main {
-    height: 100vh;
+    height: 90vh;
     margin-bottom: 0;
     overflow-y: scroll;
     overflow-x: hidden;
     z-index: 99;
+
 }
 
 #cont-song {
