@@ -33,7 +33,7 @@ body {
 }
 
 main {
-    height: 90vh;
+    height: 100vh;
     margin-bottom: 0;
     overflow-y: scroll;
     overflow-x: hidden;
