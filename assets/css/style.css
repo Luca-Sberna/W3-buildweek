@@ -14,7 +14,7 @@
 
 #album-body {
     background: rgba(68, 64, 64, 1);
-    background: linear-gradient(0deg, rgb(24, 23, 23) 36%, rgb(110, 95, 39) 62%, 55.5%, rgba(222, 192, 79, 1) 85%);
+    background: linear-gradient(0deg, rgb(24, 23, 23) 36%, rgb(110, 95, 39) 68%, 55.5%, rgba(222, 192, 79, 1) 85%);
     background-attachment: local;
 
 }
