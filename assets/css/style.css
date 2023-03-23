@@ -534,7 +534,7 @@ i:hover {
 .play-pause {
   display: inline-block;
   padding: 8px;
-  background-color: var(--primary-color);
+  background-color: rgb(243, 243, 243);
   color: #111;
   border-radius: 50%;
 }
