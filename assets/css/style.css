@@ -638,3 +638,9 @@ i:hover {
         background-attachment: local;
     }
 }
+
+@media (max-width: 762px) {
+    .fa-chevron-circle-right {
+        display: none;
+    }
+}
