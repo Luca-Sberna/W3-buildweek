@@ -19,7 +19,7 @@
   <!-- container di tutto -->
   <div id="cont" class="row">
     <!-- container della sezione centrale -->
-    <main class="col bg-dark order-2 pb-4 gx-0" style="
+    <main class="col bg-dark order-2 pb-4 md-pb-4 gx-0" style="
           background: rgb(78, 78, 78);
           background: linear-gradient(
             180deg,
@@ -77,7 +77,7 @@
         <div class="row pt-4">
           <div class="intestazioneArtist">
             <p class="p-0"><i class="bi bi-patch-check-fill"></i> Artista verificato</p>
-            <h5 class="px-0">nomeartista</h5>
+            <h5 class="px-0 text-break">nomeartista</h5>
             <p class="mb-3 px-0">ascoltatori mensili</p>
           </div>
         </div>
@@ -243,7 +243,7 @@
       <!-- fine container  -->
     </main>
     <!-- Player-Spotify -->
-    <section>
+  
       <div class="music-player sticky-player">
         <div class="song-bar">
           <div class="song-infos">
@@ -288,10 +288,10 @@
           </div>
         </div>
       </div>
-    </section>
+   
     <!-- sidebar di sinistra -->
 
-    <aside class="col-3 bg-black order-1">
+    <aside class="col-3 bg-black order-1 d-none d-md-flex">
       <div id="sidebar" class="ps-1">
         <a href="index.html"><svg id="logo" viewBox="0 0 1134 340" class="spotify-logo--text py-3 ps-2"
             xmlns="http://www.w3.org/2000/svg">
@@ -496,7 +496,7 @@
     </aside>
 
     <!-- sidebar destra friends -->
-    <aside id="rightBar" class="col-2 order-3 bg-black ps-1">
+    <aside id="rightBar" class="col-2 order-3 bg-black ps-1 d-none d-md-block">
       <div>
         <div id="friends" class="d-flex justify-content-between align-items-center py-4 ps-2">
           <h6 class="fw-bold text-white m-0">Attività amici</h6>
