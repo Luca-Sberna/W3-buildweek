@@ -19,7 +19,7 @@
   <!-- container di tutto -->
   <div id="cont" class="row">
     <!-- container della sezione centrale -->
-    <main id="homepage-body" class="col order-2 px-4 md-px-4 md-pb-4">
+    <div id="homepage-body" class="col order-2  px-4 md-px-4 ">
       <!--top-bar parte sopra della canzone in primo piano -->
       <div id="content" class="d-none d-md-flex justify-content-between sticky-top py-2 row"
         style="background: rgb(33, 33, 33)">
@@ -76,38 +76,37 @@
       </div>
 
       <!-- container canzone in primo piano -->
-      <div id="cont-song" class="border row border-0 d-none d-md-flex">
+      <div id="cont-song" class="border row border-0 d-none d-md-flex position-relative">
         <div class=" col-md-3 py-4">
           <img class="img-fluid" src="assets/imgs/main/image-12.jpg" alt="img" />
         </div>
-        <div class="col">
-          <div class="text-white">
-            <p class="text-uppercase fw-bold">album</p>
+        <div class="col-9 text-light">
+          <p class="text-uppercase fw-bold">album</p>
 
-            <h1 class="title-song fw-bold text-uppercase">
-              viola <span class="title-song fw-bold flex-grow text-lowercase">(feat. Salmo)</span>
-            </h1>
+          <h1 class="title-song fw-bold text-uppercase">
+            viola <span class="title-song-feat fw-bold flex-grow text-lowercase">(feat. Salmo)</span>
+          </h1>
 
-            <p class="flex-grow pb-3">
-              <a href="artist.html" class="artistiNomi text-white">Fedez</a>,
-              <a href="artist.html" class="artistiNomi text-white">Salmo</a>
-            </p>
-            <p class="flex-grow pb-3">Ascolta il nuovo singolo di Fedeze Salmo!</p>
-            <div class="d-flex gap-4 align-items-center pb-2">
-              <button type="button" class="btn-song btn rounded-pill btn-success align-middle text-black px-4 py-2">
-                Play
-              </button>
-              <button type="button"
-                class="btn-song btn btn-black text-white rounded-pill border-white align-middle px-4 py-2">
-                Salva
-              </button>
-              <button type="button" class="threeDots btn fw-bold text-white fs-1">
-                <i class="bi bi-three-dots"></i>
-              </button>
-            </div>
+          <p class="flex-grow pb-3">
+            <a href="artist.html" class="artistiNomi text-white">Fedez</a>,
+            <a href="artist.html" class="artistiNomi text-white">Salmo</a>
+          </p>
+          <p class="flex-grow pb-3">Ascolta il nuovo singolo di Fedeze Salmo!</p>
+          <div class="d-flex gap-4 align-items-center pb-2">
+            <button type="button" class="btn-song btn rounded-pill btn-success align-middle text-black px-4 py-2">
+              Play
+            </button>
+            <button type="button"
+              class="btn-song btn btn-black text-white rounded-pill border-white align-middle px-4 py-2">
+              Salva
+            </button>
+            <button type="button" class="threeDots btn fw-bold text-white fs-1">
+              <i class="bi bi-three-dots"></i>
+            </button>
           </div>
         </div>
-        <div class="col-2 position-relative opacity-25">
+
+        <div class="col-2  opacity-25">
           <span
             class="nascondiAnnunci position-absolute top-0 end-0 badge text-light text-uppercase justify-content-center m-2">nascondi
             annunci</span>
@@ -119,19 +118,18 @@
         <div class="d-flex justify-content-between align-items-center ">
           <h3 class="title-mobile row py-3 fw-bold text-light mb-0 fs-1">Buonasera</h3>
           <div class="d-md-none ">
-            <a href="#"><i class="bi bi-bell text-white fs-1"></i></a>
-            <a href="#"><i class="bi bi-clock-history text-white fs-1 ps-4"></i></a>
-            <a href="#"><i class="bi bi-gear text-white fs-1 ps-4"></i></a>
+            <a href="#" class="link-nav"><i class="bi bi-bell text-white fs-1"></i></a>
+            <a href="#" class="link-nav"><i class="bi bi-clock-history text-white fs-1 ps-4"></i></a>
+            <a href="#" class="link-nav"><i class="bi bi-gear text-white fs-1 ps-4"></i></a>
           </div>
         </div>
 
         <div class="d-md-none d-flex py-4 gap-5 ps-4">
+          <span class="fs-4 text-white">
+            <a href="#" class="link-nav-mobile  text-decoration-none">Musica</a>
           </span>
           <span class="fs-4 text-white">
-            <a href="#" class="nav-link">Musica</a>
-          </span>
-          <span class="fs-4 text-white">
-            <a href="#" class="nav-link">Podcast e show</a>
+            <a href="#" class="link-nav-mobile  text-decoration-none">Podcast e show</a>
           </span>
         </div>
 
@@ -146,7 +144,7 @@
                     <img class="img-fluid rounded-start" src="assets/imgs/main/image-1.jpg" alt="cover-song" />
                   </div>
                   <div class="col-8">
-                    <h6 class="m-0 ps-1 text-light ">early stage emily syndrome</h6>
+                    <h6 class="m-0 ps-1 text-light text-truncate">early stage emily syndrome</h6>
                   </div>
                 </div>
               </div>
@@ -159,7 +157,7 @@
                     <img class="img-fluid rounded-start" src="assets/imgs/main/image-1.jpg" alt="cover-song" />
                   </div>
                   <div class="col-8">
-                    <h6 class="m-0 ps-1 text-light ">early stage emily syndrome</h6>
+                    <h6 class="m-0 ps-1 text-light text-truncate">early stage emily syndrome</h6>
                   </div>
                 </div>
               </div>
@@ -172,7 +170,7 @@
                     <img class="img-fluid rounded-start" src="assets/imgs/main/image-1.jpg" alt="cover-song" />
                   </div>
                   <div class="col-8">
-                    <h6 class="m-0 ps-1 text-light ">early stage emily syndrome</h6>
+                    <h6 class="m-0 ps-1 text-light text-truncate">early stage emily syndrome</h6>
                   </div>
                 </div>
               </div>
@@ -185,7 +183,7 @@
                     <img class="img-fluid rounded-start" src="assets/imgs/main/image-1.jpg" alt="cover-song" />
                   </div>
                   <div class="col-8">
-                    <h6 class="m-0 ps-1 text-light ">early stage emily syndrome</h6>
+                    <h6 class="m-0 ps-1 text-light text-truncate">early stage emily syndrome</h6>
                   </div>
                 </div>
               </div>
@@ -198,7 +196,7 @@
                     <img class="img-fluid rounded-start" src="assets/imgs/main/image-1.jpg" alt="cover-song" />
                   </div>
                   <div class="col-8">
-                    <h6 class="m-0 ps-1 text-light ">early stage emily syndrome</h6>
+                    <h6 class="m-0 ps-1 text-light text-truncate">early stage emily syndrome</h6>
                   </div>
                 </div>
               </div>
@@ -211,7 +209,7 @@
                     <img class="img-fluid rounded-start" src="assets/imgs/main/image-1.jpg" alt="cover-song" />
                   </div>
                   <div class="col-8">
-                    <h6 class="m-0 ps-1 text-light ">early stage emily syndrome</h6>
+                    <h6 class="m-0 ps-1 text-light text-truncate">early stage emily syndrome</h6>
                   </div>
                 </div>
               </div>
@@ -234,10 +232,10 @@
 
           <div class="second-section text-white card col-12 col-md p-4 p-md-0 d-flex rounded-4">
             <div class="col d-flex ">
-              <img src="assets/imgs/main/image-10.jpg" class="card-img-top w-50 img-fluid rounded p-2 " alt="..." />
+              <img src="assets/imgs/main/image-10.jpg" class="card-img-top w-50 img-fluid rounded p-md-2 " alt="..." />
               <div class="flex-column ps-3">
-                <p class=" d-md-none fs-5">Playlist</p>
-                <h2 class="d-md-none fs-1 pt-4">Rush</h2>
+                <p class=" d-md-none link-nav text-light opacity-25 fs-5">Playlist</p>
+                <h2 class="d-md-none link-nav text-light fs-1 pt-4">Rush</h2>
               </div>
             </div>
             <div class="card-body p-2 d-none d-md-block">
@@ -246,27 +244,27 @@
                 Some quick example text to build on the card title and make up the bulk of the card's content.
               </p>
             </div>
-
+            <!-- parti mobile della card -->
             <div class="ps-3 d-flex align-items-center justify-content-between d-md-none pt-3">
               <div>
-                <button type="button" class=" btn fs-1 text-success"><i class="bi bi-heart-fill"></i></button>
-                <button type="button" class="threeDots btn fs-1 text-black"><i
+                <button type="button" class="link-nav btn fs-1 text-success"><i class="bi bi-heart-fill"></i></button>
+                <button type="button" class="threeDots btn fs-1 text-light opacity-25"><i
                     class="bi bi-three-dots-vertical"></i></button>
               </div>
 
               <div class="d-flex align-items-center">
                 <p>16 brani</p>
-                <button type="button" class="playBtn btn  text-black  "><i class="bi bi-play-circle-fill "></i></button>
+                <button type="button" class="playBtn btn  text-success"><i class="bi bi-play-circle-fill "></i></button>
               </div>
             </div>
-          </div>
+          </div><!-- fine card -->
 
           <div class="second-section text-white card col-12 col-md p-4 p-md-0 d-flex rounded-4">
             <div class="col d-flex ">
-              <img src="assets/imgs/main/image-10.jpg" class="card-img-top w-50 img-fluid rounded p-2 " alt="..." />
+              <img src="assets/imgs/main/image-10.jpg" class="card-img-top w-50 img-fluid rounded p-md-2 " alt="..." />
               <div class="flex-column ps-3">
-                <p class=" d-md-none fs-5">Playlist</p>
-                <h2 class="d-md-none fs-1 pt-4">Rush</h2>
+                <p class=" d-md-none link-nav text-light opacity-25 fs-5">Playlist</p>
+                <h2 class="d-md-none link-nav text-light fs-1 pt-4">Rush</h2>
               </div>
             </div>
             <div class="card-body p-2 d-none d-md-block">
@@ -275,26 +273,27 @@
                 Some quick example text to build on the card title and make up the bulk of the card's content.
               </p>
             </div>
-
+            <!-- parti mobile della card -->
             <div class="ps-3 d-flex align-items-center justify-content-between d-md-none pt-3">
               <div>
-                <button type="button" class=" btn fs-1 text-success"><i class="bi bi-heart-fill"></i></button>
-                <button type="button" class="threeDots btn fs-1 text-black"><i
+                <button type="button" class="link-nav btn fs-1 text-success"><i class="bi bi-heart-fill"></i></button>
+                <button type="button" class="threeDots btn fs-1 text-light opacity-25"><i
                     class="bi bi-three-dots-vertical"></i></button>
               </div>
+
               <div class="d-flex align-items-center">
                 <p>16 brani</p>
-                <button type="button" class="playBtn btn  text-black  "><i class="bi bi-play-circle-fill "></i></button>
+                <button type="button" class="playBtn btn  text-success"><i class="bi bi-play-circle-fill "></i></button>
               </div>
             </div>
-          </div>
+          </div><!-- fine card -->
 
           <div class="second-section text-white card col-12 col-md p-4 p-md-0 d-flex rounded-4">
             <div class="col d-flex ">
-              <img src="assets/imgs/main/image-10.jpg" class="card-img-top w-50 img-fluid rounded p-2 " alt="..." />
+              <img src="assets/imgs/main/image-10.jpg" class="card-img-top w-50 img-fluid rounded p-md-2 " alt="..." />
               <div class="flex-column ps-3">
-                <p class=" d-md-none fs-5">Playlist</p>
-                <h2 class="d-md-none fs-1 pt-4">Rush</h2>
+                <p class=" d-md-none link-nav text-light opacity-25 fs-5">Playlist</p>
+                <h2 class="d-md-none link-nav text-light fs-1 pt-4">Rush</h2>
               </div>
             </div>
             <div class="card-body p-2 d-none d-md-block">
@@ -303,26 +302,27 @@
                 Some quick example text to build on the card title and make up the bulk of the card's content.
               </p>
             </div>
-
+            <!-- parti mobile della card -->
             <div class="ps-3 d-flex align-items-center justify-content-between d-md-none pt-3">
               <div>
-                <button type="button" class=" btn fs-1 text-success"><i class="bi bi-heart-fill"></i></button>
-                <button type="button" class="threeDots btn fs-1 text-black"><i
+                <button type="button" class="link-nav btn fs-1 text-success"><i class="bi bi-heart-fill"></i></button>
+                <button type="button" class="threeDots btn fs-1 text-light opacity-25"><i
                     class="bi bi-three-dots-vertical"></i></button>
               </div>
+
               <div class="d-flex align-items-center">
                 <p>16 brani</p>
-                <button type="button" class="playBtn btn  text-black  "><i class="bi bi-play-circle-fill "></i></button>
+                <button type="button" class="playBtn btn  text-success"><i class="bi bi-play-circle-fill "></i></button>
               </div>
             </div>
-          </div>
+          </div><!-- fine card -->
 
           <div class="second-section text-white card col-12 col-md p-4 p-md-0 d-flex rounded-4">
             <div class="col d-flex ">
-              <img src="assets/imgs/main/image-10.jpg" class="card-img-top w-50 img-fluid rounded p-2 " alt="..." />
+              <img src="assets/imgs/main/image-10.jpg" class="card-img-top w-50 img-fluid rounded p-md-2 " alt="..." />
               <div class="flex-column ps-3">
-                <p class=" d-md-none fs-5">Playlist</p>
-                <h2 class="d-md-none fs-1 pt-4">Rush</h2>
+                <p class=" d-md-none link-nav text-light opacity-25 fs-5">Playlist</p>
+                <h2 class="d-md-none link-nav text-light fs-1 pt-4">Rush</h2>
               </div>
             </div>
             <div class="card-body p-2 d-none d-md-block">
@@ -331,26 +331,27 @@
                 Some quick example text to build on the card title and make up the bulk of the card's content.
               </p>
             </div>
-
+            <!-- parti mobile della card -->
             <div class="ps-3 d-flex align-items-center justify-content-between d-md-none pt-3">
               <div>
-                <button type="button" class=" btn fs-1 text-success"><i class="bi bi-heart-fill"></i></button>
-                <button type="button" class="threeDots btn fs-1 text-black"><i
+                <button type="button" class="link-nav btn fs-1 text-success"><i class="bi bi-heart-fill"></i></button>
+                <button type="button" class="threeDots btn fs-1 text-light opacity-25"><i
                     class="bi bi-three-dots-vertical"></i></button>
               </div>
+
               <div class="d-flex align-items-center">
                 <p>16 brani</p>
-                <button type="button" class="playBtn btn  text-black  "><i class="bi bi-play-circle-fill "></i></button>
+                <button type="button" class="playBtn btn  text-success"><i class="bi bi-play-circle-fill "></i></button>
               </div>
             </div>
-          </div>
+          </div><!-- fine card -->
 
-          <div class="second-section text-white card col-12 col-md p-4 p-md-0 d-flex rounded-4 ">
+          <div class="second-section text-white card col-12 col-md p-4 p-md-0 d-flex rounded-4">
             <div class="col d-flex ">
-              <img src="assets/imgs/main/image-10.jpg" class="card-img-top  w-50 img-fluid rounded p-2 " alt="..." />
+              <img src="assets/imgs/main/image-10.jpg" class="card-img-top w-50 img-fluid rounded p-md-2 " alt="..." />
               <div class="flex-column ps-3">
-                <p class=" d-md-none fs-5">Playlist</p>
-                <h2 class="d-md-none fs-1 pt-4">Rush</h2>
+                <p class=" d-md-none link-nav text-light opacity-25 fs-5">Playlist</p>
+                <h2 class="d-md-none link-nav text-light fs-1 pt-4">Rush</h2>
               </div>
             </div>
             <div class="card-body p-2 d-none d-md-block">
@@ -359,24 +360,27 @@
                 Some quick example text to build on the card title and make up the bulk of the card's content.
               </p>
             </div>
-
+            <!-- parti mobile della card -->
             <div class="ps-3 d-flex align-items-center justify-content-between d-md-none pt-3">
               <div>
-                <button type="button" class=" btn fs-1 text-success"><i class="bi bi-heart-fill"></i></button>
-                <button type="button" class="threeDots btn fs-1 text-black"><i
+                <button type="button" class="link-nav btn fs-1 text-success"><i class="bi bi-heart-fill"></i></button>
+                <button type="button" class="threeDots btn fs-1 text-light opacity-25"><i
                     class="bi bi-three-dots-vertical"></i></button>
               </div>
+
               <div class="d-flex align-items-center">
                 <p>16 brani</p>
-                <button type="button" class="playBtn btn  text-black  "><i class="bi bi-play-circle-fill "></i></button>
+                <button type="button" class="playBtn btn  text-success"><i class="bi bi-play-circle-fill "></i></button>
               </div>
             </div>
-
-          </div>
+          </div><!-- fine card -->
 
         </div>
+
       </div>
-    </main>
+
+    </div>
+
 
 
     <!-- Player-Spotify -->
@@ -428,11 +432,11 @@
 
     <!-- nav-bar mobile -->
     <div
-      class="nav d-flex fixed-bottom bg-black opacity-50 d-md-none align-items-center justify-content-center gap-5 h-5 pe-0">
+      class="nav d-flex fixed-bottom bg-black bg-opacity-50 d-md-none align-items-center justify-content-center gap-5 h-5 pe-0">
       <div class="justify-content-center d-flex align-items-center">
         <a href="index.html" class="link-nav text-decoration-none"><svg role="img" height="80" width="80"
-            aria-hidden="true" class="Svg-sc-ytk21e-0 uPxdw home-active-icon text-white p-3" viewBox="0 0 24 24"
-            data-encore-id="icon">
+            aria-hidden="true" class="Svg-sc-ytk21e-0 uPxdw home-active-icon text-white p-3 opacity-100"
+            viewBox="0 0 24 24" data-encore-id="icon">
             <path fill="white"
               d="M13.5 1.515a3 3 0 0 0-3 0L3 5.845a2 2 0 0 0-1 1.732V21a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6h4v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V7.577a2 2 0 0 0-1-1.732l-7.5-4.33z">
             </path>
@@ -444,7 +448,7 @@
       </div>
 
       <a href="artist.html" class="link-nav text-decoration-none"><svg role="img" height="80" width="80"
-          aria-hidden="true" class="Svg-sc-ytk21e-0 uPxdw search-icon text-light p-3" viewBox="0 0 24 24"
+          aria-hidden="true" class="Svg-sc-ytk21e-0 uPxdw search-icon text-light p-3 opacity-100" viewBox="0 0 24 24"
           data-encore-id="icon">
           <path fill="white"
             d="M10.533 1.279c-5.18 0-9.407 4.14-9.407 9.279s4.226 9.279 9.407 9.279c2.234 0 4.29-.77 5.907-2.058l4.353 4.353a1 1 0 1 0 1.414-1.414l-4.344-4.344a9.157 9.157 0 0 0 2.077-5.816c0-5.14-4.226-9.28-9.407-9.28zm-7.407 9.279c0-4.006 3.302-7.28 7.407-7.28s7.407 3.274 7.407 7.28-3.302 7.279-7.407 7.279-7.407-3.273-7.407-7.28z">
@@ -456,8 +460,8 @@
       </a>
 
       <a href="album.html" class="link-nav text-decoration-none text-center"><svg role="img" height="80" width="80"
-          aria-hidden="true" class="Svg-sc-ytk21e-0 uPxdw collection-icon text-light p-3 " viewBox="0 0 24 24"
-          data-encore-id="icon">
+          aria-hidden="true" class="Svg-sc-ytk21e-0 uPxdw collection-icon text-light p-3 opacity-100"
+          viewBox="0 0 24 24" data-encore-id="icon">
           <path fill="white"
             d="M14.5 2.134a1 1 0 0 1 1 0l6 3.464a1 1 0 0 1 .5.866V21a1 1 0 0 1-1 1h-6a1 1 0 0 1-1-1V3a1 1 0 0 1 .5-.866zM16 4.732V20h4V7.041l-4-2.309zM3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zm6 0a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1z">
           </path>
@@ -470,7 +474,7 @@
 
 
     <!-- sidebar di sinistra -->
-    <aside class="d-none d-md-flex col-md-3  bg-black order-1">
+    <aside class="d-none d-md-block col-md-3  bg-black order-1">
       <div id="sidebar" class="ps-1">
         <a href="index.html"><svg id="logo" viewBox="0 0 1134 340" class="spotify-logo--text py-3 ps-2"
             xmlns="http://www.w3.org/2000/svg">
@@ -484,7 +488,7 @@
         <div class="ps-3 nav-first pb-4">
           <ul class="nav-first list-unstyled text-decoration-none nav-link">
             <li class="mb-2">
-              <a href="#" class="d-flex align-items-center text-decoration-none link-nav">
+              <a href="index.html" class="d-flex align-items-center text-decoration-none link-nav">
                 <div class="me-3">
                   <svg role="img" height="24" width="24" aria-hidden="true"
                     class="Svg-sc-ytk21e-0 uPxdw home-active-icon" viewBox="0 0 24 24" data-encore-id="icon">
@@ -674,7 +678,7 @@
     </aside>
 
     <!-- sidebar destra friends -->
-    <aside id="rightBar" class="d-none d-lg-flex col-lg-2 order-3 bg-black ps-1">
+    <aside id="rightBar" class="d-none d-lg-block col-lg-2 order-3 bg-black ps-1">
       <div>
         <div id="friends" class="d-flex justify-content-between align-items-center py-4 ps-2">
           <h6 class="fw-bold text-white m-0">Attività amici</h6>
