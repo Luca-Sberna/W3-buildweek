@@ -65,6 +65,20 @@ main {
   background-color: #202020;
 }
 
+@media (min-width: 768px) {
+    .card-img-top:not(.w-100) {
+        width: auto !important;
+    }
+
+    .second-section {
+        border-radius: .375rem !important;
+    }
+
+    .title-mobile {
+        font-size: 1.5rem !important;
+    }
+}
+
 #logo {
   width: 130px;
 }
