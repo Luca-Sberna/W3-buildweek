@@ -602,3 +602,16 @@ i:hover {
 .volume-bar .progress-bar:hover .progress::after {
   --size: 0.8em;
 }
+
+/* Media Query  titolo Album Page */
+
+.title-album {
+  font-size: 5rem; /* dimensione del font per schermi desktop */
+}
+
+@media screen and (max-width: 767px) {
+  /* dimensione del font per schermi mobili */
+  .title-album {
+    font-size: 2.5rem;
+  }
+}
