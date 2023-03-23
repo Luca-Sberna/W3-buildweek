@@ -55,13 +55,18 @@ main {
     margin-left: 10px;
 }
 
-.first-section {
-    background-color: #434343;
+.second-section {
+    background-color: #3e3e3e;
 }
 
-.second-section {
-    background-color: #202020;
+
+@media (max-width: 768px) {
+    .card-img-top {
+        box-shadow: 0px 0px 10px 0px;
+    }
+
 }
+
 
 @media (min-width: 768px) {
     .card-img-top:not(.w-100) {
@@ -74,6 +79,14 @@ main {
 
     .title-mobile {
         font-size: 1.5rem !important;
+    }
+
+    .first-section {
+        background-color: #434343;
+    }
+
+    .second-section {
+        background-color: #202020;
     }
 }
 
@@ -290,9 +303,26 @@ p {
 .nascondiAnnunci:hover,
 .list-sidebar:hover,
 .threeDots.btn:hover,
-.playBtn:hover {
+.playBtn:hover,
+img:hover,
+.second-section:hover,
+.first-section:hover {
     transform: scale(1.05);
+    transition: 0.2s ease-in-out;
     color: white;
+}
+
+
+
+
+
+.link-nav-mobile {
+    color: #eeeeee;
+}
+
+.link-nav-mobile:hover {
+    color: white;
+
 }
 
 .threeDots {
