@@ -12,8 +12,8 @@
 }
 
 #album-body {
-  background: rgba(68, 64, 64, 1);
-  background: linear-gradient(0deg, rgb(24, 23, 23) 60%, rgb(110, 95, 39) 75%, 55.5%, rgba(222, 192, 79, 1) 85%);
+  background: rgb(110, 95, 39);
+  background: linear-gradient(180deg, rgba(110, 95, 39, 1) 0%, rgba(18, 18, 18, 1) 35%);
   background-attachment: local;
 }
 
@@ -612,6 +612,14 @@ i:hover {
 @media screen and (max-width: 767px) {
   /* dimensione del font per schermi mobili */
   .title-album {
-    font-size: 2.5rem;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  #album-body {
+    background: rgba(68, 64, 64, 1);
+    background: linear-gradient(0deg, rgb(24, 23, 23) 60%, rgb(110, 95, 39) 75%, 55.5%, rgba(222, 192, 79, 1) 85%);
+    background-attachment: local;
   }
 }
