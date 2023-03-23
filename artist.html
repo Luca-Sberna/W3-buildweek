@@ -19,67 +19,75 @@
   <!-- container di tutto -->
   <div id="cont" class="row ">
     <!-- container della sezione centrale -->
-    <main class="col bg-dark order-2 px-4 pb-4">
-      <!--top-bar parte sopra della canzone in primo piano -->
-      <div class="d-flex justify-content-between sticky-top py-2 row">
-        <div class="col p-0 d-flex gap-1">
-          <div class="flex-nowrap">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-              class="bi bi-caret-left-square-fill rounded-circle" viewBox="0 0 16 16">
-              <path
-                d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm10.5 10V4a.5.5 0 0 0-.832-.374l-4.5 4a.5.5 0 0 0 0 .748l4.5 4A.5.5 0 0 0 10.5 12z" />
-            </svg>
+    <main class="col bg-dark order-2 pb-4 gx-0"
+      style='background: rgb(78,78,78);
+      background: linear-gradient(180deg, rgba(78,78,78,1) 0%, rgba(56,56,56,1) 27%, rgba(31,31,31,1) 47%, rgba(18,18,18,1) 69%);'><!-- style da spostare -->
+
+      <div id="artistaCaricato" class="px-3">
+        <!--top-bar parte sopra della canzone in primo piano -->
+        <div class="d-flex justify-content-between sticky-top py-2 px-2 row">
+          <div class="col p-0 d-flex gap-1">
+            <div class="flex-nowrap">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                class="bi bi-caret-left-square-fill rounded-circle" viewBox="0 0 16 16">
+                <path
+                  d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm10.5 10V4a.5.5 0 0 0-.832-.374l-4.5 4a.5.5 0 0 0 0 .748l4.5 4A.5.5 0 0 0 10.5 12z" />
+              </svg>
+            </div>
+            <div class="flex-nowrap">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                class="bi bi-caret-right-square-fill rounded-circle" viewBox="0 0 16 16">
+                <path
+                  d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.5 10a.5.5 0 0 0 .832.374l4.5-4a.5.5 0 0 0 0-.748l-4.5-4A.5.5 0 0 0 5.5 4v8z" />
+              </svg>
+            </div>
           </div>
-          <div class="flex-nowrap">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-              class="bi bi-caret-right-square-fill rounded-circle" viewBox="0 0 16 16">
-              <path
-                d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.5 10a.5.5 0 0 0 .832.374l4.5-4a.5.5 0 0 0 0-.748l-4.5-4A.5.5 0 0 0 5.5 4v8z" />
-            </svg>
+          <div class="col p-0 flex-grow"></div>
+          <div class="col p-0 flex-grow"></div>
+          <div class="col p-0 flex-grow"></div>
+          <div class="col p-0 flex-grow"></div>
+          <div class="col p-0 flex-grow"></div>
+          <div class="col p-0 flex-grow"></div>
+          <!-- dropdown -->
+          <div class=" dropdown p-0 rounded col ">
+            <button class="tastoUtente btn bg-black text-white dropdown-toggle " type="button" data-bs-toggle="dropdown"
+              aria-expanded="false"> <img src="https://via.placeholder.com/27" class="rounded-circle" alt="...">
+              Lidia Nautilus Ambarabacci
+            </button>
+            <ul class=" dropdown-menu dropdown-menu-dark ">
+              <li>
+                <a class="menuaTendina dropdown-item bg-black" href="#">
+                  Account
+                  <span class="ml-5"><i class="bi bi-arrow-up-right-square"></i></span>
+                </a>
+              </li>
+              <li><a class="menuaTendina dropdown-item bg-black" href="#">Profilo</a></li>
+              <li><a class="menuaTendina dropdown-item bg-black" href="#"> Effettua l'upgrade a premium
+                  <span><i class="bi bi-arrow-up-right-square"></i></span></a>
+              </li>
+              <li><a class="menuaTendina dropdown-item bg-black" href="#">Impostazioni</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="menuaTendina dropdown-item bg-black" href="#">Esci</a></li>
+            </ul>
           </div>
         </div>
-        <div class="col p-0 flex-grow"></div>
-        <div class="col p-0 flex-grow"></div>
-        <div class="col p-0 flex-grow"></div>
-        <div class="col p-0 flex-grow"></div>
-        <div class="col p-0 flex-grow"></div>
-        <div class="col p-0 flex-grow"></div>
-        <!-- dropdown -->
-        <div class=" dropdown p-0 rounded col ">
-          <button class="tastoUtente btn bg-black text-white dropdown-toggle " type="button" data-bs-toggle="dropdown"
-            aria-expanded="false"> <img src="https://via.placeholder.com/27" class="rounded-circle" alt="...">
-            Lidia Nautilus Ambarabacci
-          </button>
-          <ul class=" dropdown-menu dropdown-menu-dark ">
-            <li>
-              <a class="menuaTendina dropdown-item bg-black" href="#">
-                Account
-                <span class="ml-5"><i class="bi bi-arrow-up-right-square"></i></span>
-              </a>
-            </li>
-            <li><a class="menuaTendina dropdown-item bg-black" href="#">Profilo</a></li>
-            <li><a class="menuaTendina dropdown-item bg-black" href="#"> Effettua l'upgrade a premium
-                <span><i class="bi bi-arrow-up-right-square"></i></span></a>
-            </li>
-            <li><a class="menuaTendina dropdown-item bg-black" href="#">Impostazioni</a></li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li><a class="menuaTendina dropdown-item bg-black" href="#">Esci</a></li>
-          </ul>
+        <div class="row pt-4">
+          <div class="intestazioneArtist">
+            <p class="p-0"> <i class="bi bi-patch-check-fill"></i> Artista verificato</p>
+            <h5 class="px-0">nomeartista</h5>
+            <p class="mb-3 px-0">ascoltatori mensili</p>
+          </div>
         </div>
       </div>
-      <div id="artistaCaricato"></div>
-      <div class="row pt-4 ">
-        <div class="intestazioneArtist">
-          <p> <i class="bi bi-patch-check-fill"></i> Artista verificato</p>
-          <h5>nomeartista</h5>
-          <p class="mb-3">ascoltatori mensili</p>
-        </div>
-      </div>
-      <div class="row mt-5">
-        <div class="row ps-4">
-          <div class="col-12 artistButton ">
+
+      <!-- container  sotto hero-->
+      <div class="px-3 h-100">
+
+        <!-- bottoni sotto hero -->
+        <div class="row mt-1">
+          <div class="col-12 artistButton p-0">
             <button type="button" class="playBtn me-3 btn  text-success "><i
                 class="bi bi-play-circle-fill "></i></button>
             <button type="button"
@@ -88,74 +96,213 @@
                 class="bi bi-three-dots"></i></button>
           </div>
         </div>
-        <div class="row p-2 flex-column-reverse flex-md-row">
-          <div id="tracce" class="col-12 col-md-8 p-0">
-            <h2 class="text-light fs-4 fw-bolder py-4 ps-4">Popolari</h2>
+
+
+        <!-- griglia brani artist popolari e brani che ti piacciono - container generale-->
+        <div class="row flex-column-reverse flex-md-row gap-3 gx-0 ">
+
+          <!-- container popolari -->
+          <div id="tracce" class="col-7 p-0">
+            <h2 class="text-light fs-4 fw-bolder py-4 ">Popolari</h2>
+
+            <div class="row ms-1 align-items-center pb-3">
+
+              <div class="d-flex col-7 align-items-center ">
+                <div class="col-1 text-light">1</div>
+                <div class="col-2 me-2"><img src="assets/imgs/main/image-16.jpg" class="img-fluid" alt="img-album">
+                </div>
+
+                <div class="col text-light">
+                  <h6>Mark Chapman</h6>
+                </div>
+              </div>
+
+              <div class="col-3 text-light align-items-center">25/12/2055</div>
+              <div class="col text-light align-items-center">3:34</div>
+
+            </div>
+
+            <div class="row ms-1 align-items-center pb-3">
+
+              <div class="d-flex col-7 align-items-center ">
+                <div class="col-1 text-light">1</div>
+                <div class="col-2 me-2"><img src="assets/imgs/main/image-16.jpg" class="img-fluid" alt="img-album">
+                </div>
+
+                <div class="col text-light">
+                  <h6>Mark Chapman</h6>
+                </div>
+              </div>
+
+              <div class="col-3 text-light align-items-center">25/12/2055</div>
+              <div class="col text-light align-items-center">3:34</div>
+
+            </div>
+
+            <div class="row ms-1 align-items-center pb-3">
+
+              <div class="d-flex col-7 align-items-center ">
+                <div class="col-1 text-light">1</div>
+                <div class="col-2 me-2"><img src="assets/imgs/main/image-16.jpg" class="img-fluid" alt="img-album">
+                </div>
+
+                <div class="col text-light">
+                  <h6>Mark Chapman</h6>
+                </div>
+              </div>
+
+              <div class="col-3 text-light align-items-center">25/12/2055</div>
+              <div class="col text-light align-items-center">3:34</div>
+
+            </div>
+
+            <div class="row ms-1 align-items-center pb-3">
+
+              <div class="d-flex col-7 align-items-center ">
+                <div class="col-1 text-light">1</div>
+                <div class="col-2 me-2"><img src="assets/imgs/main/image-16.jpg" class="img-fluid" alt="img-album">
+                </div>
+
+                <div class="col text-light">
+                  <h6>Mark Chapman</h6>
+                </div>
+              </div>
+
+              <div class="col-3 text-light align-items-center">25/12/2055</div>
+              <div class="col text-light align-items-center">3:34</div>
+
+            </div>
+
+            <div class="row ms-1 align-items-center pb-3">
+
+              <div class="d-flex col-7 align-items-center ">
+                <div class="col-1 text-light">1</div>
+                <div class="col-2 me-2"><img src="assets/imgs/main/image-16.jpg" class="img-fluid" alt="img-album">
+                </div>
+
+                <div class="col text-light">
+                  <h6>Mark Chapman</h6>
+                </div>
+              </div>
+
+              <div class="col-3 text-light align-items-center">25/12/2055</div>
+              <div class="col text-light align-items-center">3:34</div>
+
+            </div>
+
+            <div class="row ms-1 align-items-center pb-3">
+
+              <div class="d-flex col-7 align-items-center ">
+                <div class="col-1 text-light">1</div>
+                <div class="col-2 me-2"><img src="assets/imgs/main/image-16.jpg" class="img-fluid" alt="img-album">
+                </div>
+
+                <div class="col text-light">
+                  <h6>Mark Chapman</h6>
+                </div>
+              </div>
+
+              <div class="col-3 text-light align-items-center">25/12/2055</div>
+              <div class="col text-light align-items-center">3:34</div>
+
+            </div>
+
+            <div class="row ms-1 align-items-center pb-3">
+
+              <div class="d-flex col-7 align-items-center ">
+                <div class="col-1 text-light">1</div>
+                <div class="col-2 me-2"><img src="assets/imgs/main/image-16.jpg" class="img-fluid" alt="img-album">
+                </div>
+
+                <div class="col text-light">
+                  <h6>Mark Chapman</h6>
+                </div>
+              </div>
+
+              <div class="col-3 text-light align-items-center">25/12/2055</div>
+              <div class="col text-light align-items-center">3:34</div>
+
+            </div>
+
+
           </div>
-          <div id="braniChetipiacc" class="col-12 col-md-4 ps-4 p-md-0">
+
+          <!-- container brani che ti piacciono -->
+          <div id="braniChetipiacc" class="col-4">
             <h2 class="text-light fs-4 fw-bolder py-4">
               Brani che ti piacciono
             </h2>
-          </div>
-          <div class="mt-4">
-            <!-- song list header -->
-            <div class="d-flex border-bottom text-white text-uppercase">
-              <div class="p-2 w-8 flex-shrink-0"></div>
-              <div class="p-2 w-8 flex-shrink-0"></div>
-              <div class="p-2 flex-grow-1"># Titolo</div>
-              <div class="p-2 flex-grow-1">riproduzioni</div>
-              <div class="p-2 w-12 flex-shrink-0 text-end"></div>
-            </div>
-          </div>
-        </div>
+
+            <div class="row">
+              <div class="col-3"><img src="assets/imgs/main/image-7.jpg" class="img-fluid rounded-circle"
+                  alt="img-artist"></div>
+              <div class="col">
+                <h6 class="text-white">Hai messo mi piace a 11 brani</h6>
+                <p class="text-light fw-light">Di YellowCard</p>
+              </div>
 
             </div>
+          </div>
+
+          <a href="#" class="pb-5 text-uppercase text-decoration-none text-light">visualizza altro</a>
+          <!-- div per le card da mostrare -->
+          <div class="row">
+          </div>
+
+        </div>
+
+
+      </div><!-- fine container  -->
+
+
 
     </main>
     <!-- Player-Spotify -->
-    <div class="music-player sticky-player">
-      <div class="song-bar">
-        <div class="song-infos">
-          <div class="image-container">
-            <img src="https://www.focusjunior.it/content/uploads/site_stored/imgs/0001/047/pecora_06.jpg" alt="...." />
+    <section>
+      <div class="music-player sticky-player ">
+        <div class="song-bar">
+          <div class="song-infos">
+            <div class="image-container">
+              <img src="https://www.focusjunior.it/content/uploads/site_stored/imgs/0001/047/pecora_06.jpg"
+                alt="...." />
+            </div>
+            <div class="song-description">
+              <p class="title">La Gatta</p>
+              <p class="artist">Gino Paoli</p>
+            </div>
           </div>
-          <div class="song-description">
-            <p class="title">La Gatta</p>
-            <p class="artist">Gino Paoli</p>
+          <div class="icons">
+            <i class="far fa-heart"></i>
+            <i class="fas fa-compress"></i>
           </div>
         </div>
-        <div class="icons">
-          <i class="far fa-heart"></i>
-          <i class="fas fa-compress"></i>
+        <div class="progress-controller">
+          <div class="control-buttons">
+            <i class="fas fa-random"></i>
+            <i class="fas fa-step-backward"></i>
+            <i class="play-pause fas fa-play"></i>
+            <i class="fas fa-step-forward"></i>
+            <i class="fas fa-undo-alt"></i>
+          </div>
+          <div class="progress-container">
+            <span>0:49</span>
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
+            <span>3:15</span>
+          </div>
+        </div>
+        <div class="other-features">
+          <i class="fas fa-list-ul"></i>
+          <i class="fas fa-desktop"></i>
+          <div class="volume-bar">
+            <i class="fas fa-volume-down"></i>
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="progress-controller">
-        <div class="control-buttons">
-          <i class="fas fa-random"></i>
-          <i class="fas fa-step-backward"></i>
-          <i class="play-pause fas fa-play"></i>
-          <i class="fas fa-step-forward"></i>
-          <i class="fas fa-undo-alt"></i>
-        </div>
-        <div class="progress-container">
-          <span>0:49</span>
-          <div class="progress-bar">
-            <div class="progress"></div>
-          </div>
-          <span>3:15</span>
-        </div>
-      </div>
-      <div class="other-features">
-        <i class="fas fa-list-ul"></i>
-        <i class="fas fa-desktop"></i>
-        <div class="volume-bar">
-          <i class="fas fa-volume-down"></i>
-          <div class="progress-bar">
-            <div class="progress"></div>
-          </div>
-        </div>
-      </div>
-    </div>
     </section>
     <!-- sidebar di sinistra -->
 
