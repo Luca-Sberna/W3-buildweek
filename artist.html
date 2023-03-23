@@ -243,55 +243,97 @@
       <!-- fine container  -->
     </main>
     <!-- Player-Spotify -->
-  
-      <div class="music-player sticky-player">
-        <div class="song-bar">
-          <div class="song-infos">
-            <div class="image-container">
-              <img src="https://www.focusjunior.it/content/uploads/site_stored/imgs/0001/047/pecora_06.jpg"
-                alt="...." />
-            </div>
-            <div class="song-description">
-              <p class="title">La Gatta</p>
-              <p class="artist">Gino Paoli</p>
-            </div>
+
+    <div class="music-player sticky-player d-none d-md-flex">
+      <div class="song-bar">
+        <div class="song-infos">
+          <div class="image-container">
+            <img src="https://www.focusjunior.it/content/uploads/site_stored/imgs/0001/047/pecora_06.jpg" alt="...." />
           </div>
-          <div class="icons">
-            <i class="far fa-heart"></i>
-            <i class="fas fa-compress"></i>
+          <div class="song-description">
+            <p class="title">La Gatta</p>
+            <p class="artist">Gino Paoli</p>
           </div>
         </div>
-        <div class="progress-controller">
-          <div class="control-buttons">
-            <i class="fas fa-random"></i>
-            <i class="fas fa-step-backward"></i>
-            <i class="play-pause fas fa-play"></i>
-            <i class="fas fa-step-forward"></i>
-            <i class="fas fa-undo-alt"></i>
-          </div>
-          <div class="progress-container">
-            <span>0:49</span>
-            <div class="progress-bar">
-              <div class="progress"></div>
-            </div>
-            <span>3:15</span>
-          </div>
+        <div class="icons">
+          <i class="far fa-heart"></i>
+          <i class="fas fa-compress"></i>
         </div>
-        <div class="other-features">
-          <i class="fas fa-list-ul"></i>
-          <i class="fas fa-desktop"></i>
-          <div class="volume-bar">
-            <i class="fas fa-volume-down"></i>
-            <div class="progress-bar">
-              <div class="progress"></div>
-            </div>
+      </div>
+      <div class="progress-controller">
+        <div class="control-buttons">
+          <i class="fas fa-random"></i>
+          <i class="fas fa-step-backward"></i>
+          <i class="play-pause fas fa-play"></i>
+          <i class="fas fa-step-forward"></i>
+          <i class="fas fa-undo-alt"></i>
+        </div>
+        <div class="progress-container">
+          <span>0:49</span>
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+          <span>3:15</span>
+        </div>
+      </div>
+      <div class="other-features">
+        <i class="fas fa-list-ul"></i>
+        <i class="fas fa-desktop"></i>
+        <div class="volume-bar">
+          <i class="fas fa-volume-down"></i>
+          <div class="progress-bar">
+            <div class="progress"></div>
           </div>
         </div>
       </div>
-   
-    <!-- sidebar di sinistra -->
+    </div>
 
-    <aside class="col-3 bg-black order-1 d-none d-md-flex">
+    <!-- nav-bar mobile -->
+    <div
+      class="nav d-flex fixed-bottom bg-black bg-opacity-50 d-md-none align-items-center justify-content-center gap-5 h-5 pe-0">
+      <div class="justify-content-center d-flex align-items-center">
+        <a href="index.html" class="link-nav text-decoration-none"><svg role="img" height="70" width="70"
+            aria-hidden="true" class="Svg-sc-ytk21e-0 uPxdw home-icon" viewBox="0 0 24 24" data-encore-id="icon">
+            <path fill="white"
+              d="M12.5 3.247a1 1 0 0 0-1 0L4 7.577V20h4.5v-6a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v6H20V7.577l-7.5-4.33zm-2-1.732a3 3 0 0 1 3 0l7.5 4.33a2 2 0 0 1 1 1.732V21a1 1 0 0 1-1 1h-6.5a1 1 0 0 1-1-1v-6h-3v6a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.577a2 2 0 0 1 1-1.732l7.5-4.33z">
+            </path>
+          </svg>
+          <div class="text-center">
+            <h6>Home</h6>
+          </div>
+        </a>
+      </div>
+
+      <a href="artist.html" class="link-nav text-decoration-none"><svg role="img" height="70" width="70"
+          aria-hidden="true" class="Svg-sc-ytk21e-0 uPxdw search-active-icon" viewBox="0 0 24 24" data-encore-id="icon">
+          <path fill="white"
+            d="M15.356 10.558c0 2.623-2.16 4.75-4.823 4.75-2.664 0-4.824-2.127-4.824-4.75s2.16-4.75 4.824-4.75c2.664 0 4.823 2.127 4.823 4.75z">
+          </path>
+          <path fill="white"
+            d="M1.126 10.558c0-5.14 4.226-9.28 9.407-9.28 5.18 0 9.407 4.14 9.407 9.28a9.157 9.157 0 0 1-2.077 5.816l4.344 4.344a1 1 0 0 1-1.414 1.414l-4.353-4.353a9.454 9.454 0 0 1-5.907 2.058c-5.18 0-9.407-4.14-9.407-9.28zm9.407-7.28c-4.105 0-7.407 3.274-7.407 7.28s3.302 7.279 7.407 7.279 7.407-3.273 7.407-7.28c0-4.005-3.302-7.278-7.407-7.278z">
+          </path>
+        </svg>
+        </svg>
+        <div class="text-center">
+          <h6>Cerca</h6>
+        </div>
+      </a>
+
+      <a href="album.html" class="link-nav text-decoration-none text-center"><svg role="img" height="80" width="80"
+          aria-hidden="true" class="Svg-sc-ytk21e-0 uPxdw collection-icon text-light p-3 opacity-100"
+          viewBox="0 0 24 24" data-encore-id="icon">
+          <path fill="white"
+            d="M14.5 2.134a1 1 0 0 1 1 0l6 3.464a1 1 0 0 1 .5.866V21a1 1 0 0 1-1 1h-6a1 1 0 0 1-1-1V3a1 1 0 0 1 .5-.866zM16 4.732V20h4V7.041l-4-2.309zM3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zm6 0a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1z">
+          </path>
+        </svg>
+        <div class="text-center">
+          <h6>La Tua Libreria</h6>
+        </div>
+      </a>
+    </div>
+
+    <!-- sidebar di sinistra -->
+    <aside class="d-none d-md-block col-md-3 bg-black order-1">
       <div id="sidebar" class="ps-1">
         <a href="index.html"><svg id="logo" viewBox="0 0 1134 340" class="spotify-logo--text py-3 ps-2"
             xmlns="http://www.w3.org/2000/svg">
@@ -402,83 +444,83 @@
 
             <ul class="list-unstyled ps-2 lh-lg">
               <li>
-                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 91-22</a>
+                <a href="#" class="list-sidebar nav-link text-truncate">Zecchino d'oro Compilation 91-22</a>
               </li>
 
               <li>
-                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 32-93</a>
+                <a href="#" class="list-sidebar nav-link text-truncate">Zecchino d'oro Compilation 32-93</a>
               </li>
 
               <li>
-                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 93-94 </a>
+                <a href="#" class="list-sidebar nav-link text-truncate">Zecchino d'oro Compilation 93-94 </a>
               </li>
 
               <li>
-                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 94-95 </a>
+                <a href="#" class="list-sidebar nav-link text-truncate">Zecchino d'oro Compilation 94-95 </a>
               </li>
 
               <li>
-                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 95-96</a>
+                <a href="#" class="list-sidebar nav-link text-truncate">Zecchino d'oro Compilation 95-96</a>
               </li>
 
               <li>
-                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 96-97</a>
+                <a href="#" class="list-sidebar nav-link text-truncate">Zecchino d'oro Compilation 96-97</a>
               </li>
 
               <li>
-                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 97*98</a>
+                <a href="#" class="list-sidebar nav-link text-truncate">Zecchino d'oro Compilation 97*98</a>
               </li>
 
               <li>
-                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 98-99</a>
+                <a href="#" class="list-sidebar nav-link text-truncate">Zecchino d'oro Compilation 98-99</a>
               </li>
 
               <li>
-                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 99-2000</a>
+                <a href="#" class="list-sidebar nav-link text-truncate">Zecchino d'oro Compilation 99-2000</a>
               </li>
 
               <li>
-                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 01-02</a>
+                <a href="#" class="list-sidebar nav-link text-truncate">Zecchino d'oro Compilation 01-02</a>
               </li>
 
               <li>
-                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 96-97</a>
+                <a href="#" class="list-sidebar nav-link text-truncate">Zecchino d'oro Compilation 96-97</a>
               </li>
 
               <li>
-                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 97*98</a>
+                <a href="#" class="list-sidebar nav-link text-truncate">Zecchino d'oro Compilation 97*98</a>
               </li>
 
               <li>
-                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 98-99</a>
+                <a href="#" class="list-sidebar nav-link text-truncate">Zecchino d'oro Compilation 98-99</a>
               </li>
 
               <li>
-                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 99-2000</a>
+                <a href="#" class="list-sidebar nav-link text-truncate">Zecchino d'oro Compilation 99-2000</a>
               </li>
 
               <li>
-                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 01-02</a>
+                <a href="#" class="list-sidebar nav-link text-truncate">Zecchino d'oro Compilation 01-02</a>
               </li>
 
               <li>
-                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 02-03 </a>
+                <a href="#" class="list-sidebar nav-link text-truncate">Zecchino d'oro Compilation 02-03 </a>
               </li>
 
               <li>
-                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 03-04</a>
+                <a href="#" class="list-sidebar nav-link text-truncate">Zecchino d'oro Compilation 03-04</a>
               </li>
 
               <li>
-                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 04-05</a>
+                <a href="#" class="list-sidebar nav-link text-truncate">Zecchino d'oro Compilation 04-05</a>
               </li>
 
               <li>
-                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 06-07</a>
+                <a href="#" class="list-sidebar nav-link text-truncate">Zecchino d'oro Compilation 06-07</a>
               </li>
 
               <li>
-                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 07-08</a>
+                <a href="#" class="list-sidebar nav-link text-truncate">Zecchino d'oro Compilation 07-08</a>
               </li>
             </ul>
           </div>
@@ -496,8 +538,9 @@
     </aside>
 
     <!-- sidebar destra friends -->
-    <aside id="rightBar" class="col-2 order-3 bg-black ps-1 d-none d-md-block">
-      <div>
+    <!-- sidebar destra friends -->
+    <aside id="rightBar" class="d-none d-lg-block col-lg-2 order-3 bg-black ps-1">
+      <div class="">
         <div id="friends" class="d-flex justify-content-between align-items-center py-4 ps-2">
           <h6 class="fw-bold text-white m-0">Attività amici</h6>
           <div class="text-secondary fs-5 d-flex align-items-center">
@@ -506,74 +549,66 @@
           </div>
         </div>
 
-        <div id="friends-list" class="row d-flex align-items-center mb-3 p-0 pt-4 ps-2">
-          <div class="col pe-0">
-            <img src="https://via.placeholder.com/30" class="rounded-circle" alt="..." />
+        <div class="row d-flex align-items-center mb-4 p-0 pt-4 ps-2">
+          <div class="col-2 ms-2 p-0">
+            <img src="https://via.placeholder.com/30" class="rounded-circle w-75" alt="..." />
           </div>
-
           <div class="d-flex flex-column col-6 p-0">
-            <h6 class="title-friends mb-0 pt-1 flex-nowrap">Charlie Hookham</h6>
-            <p class="para-friends mb-0 pt-1 flex-nowrap">In Camera • Yuni Zooma</p>
+            <h6 class="title-friends mb-0 pt-1 flex-nowrap text-truncate">Charlie Hookham</h6>
+            <p class="para-friends mb-0 pt-1 flex-nowrap text-truncate">In Camera • Yuni Zooma</p>
             <p class="para-friends text-uppercase">
               <span> <i class="bi bi-disc"></i> </span>Ep IIII
             </p>
           </div>
 
-          <div class="col">
-            <p class="para-friends flex-nowrap p-0">4 ore</p>
+          <div class="col-3">
+            <p class="para-friends flex-nowrap p-0 text-truncate">4 ore</p>
           </div>
         </div>
 
-        <div class="row d-flex align-items-center mb-3 p-0 ps-2">
-          <div class="col pe-0">
-            <img src="https://via.placeholder.com/30" class="rounded-circle" alt="..." />
+        <div class="row d-flex align-items-center mb-4 p-0 ps-2">
+          <div class="col-2 ms-2 p-0">
+            <img src="https://via.placeholder.com/30" class="rounded-circle w-75" alt="..." />
           </div>
 
           <div class="d-flex flex-column col-6 p-0">
-            <h6 class="title-friends mb-0 pt-1 flex-nowrap">Valeria Traverso</h6>
-            <p class="para-friends mb-0 pt-1 flex-nowrap">New Kings • Sleeping Wolf</p>
+            <h6 class="title-friends mb-0 pt-1 flex-nowrap text-truncate">Valeria Traverso</h6>
+            <p class="para-friends mb-0 pt-1 flex-nowrap text-truncate">New Kings • Sleeping Wolf</p>
             <p class="para-friends">
               <span> <i class="bi bi-music-note-beamed"></i> </span>Twint Badass mood
             </p>
           </div>
 
-          <div class="col">
-            <p class="para-friends flex-nowrap p-0">3 giorni</p>
+          <div class="col-3">
+            <p class="para-friends flex-nowrap p-0 text-truncate">3 giorni</p>
           </div>
         </div>
 
-        <div class="row d-flex align-items-center mb-3 p-0 ps-2">
-          <div class="col pe-0">
-            <img src="https://via.placeholder.com/30" class="rounded-circle" alt="..." />
+        <div class="row d-flex align-items-center mb-4 p-0 ps-2">
+          <div class="col-2 ms-2 p-0">
+            <img src="https://via.placeholder.com/30" class="rounded-circle w-75" alt="..." />
           </div>
 
           <div class="d-flex flex-column col-6 p-0">
-            <h6 class="title-friends mb-0 pt-1 flex-nowrap">lightdark02</h6>
+            <h6 class="title-friends mb-0 pt-1 flex-nowrap text-truncate">lightdark02</h6>
             <p class="para-friends mb-0 pt-1 flex-nowrap">Aimed to Kill • Jade LeMac</p>
             <p class="para-friends">
               <span> <i class="bi bi-disc"></i> </span>Aimed to Kill
             </p>
           </div>
 
-          <div class="col">
-            <p class="para-friends flex-nowrap p-0">8 ore</p>
+          <div class="col-3">
+            <p class="para-friends flex-nowrap p-0 text-truncate">8 ore</p>
           </div>
         </div>
       </div>
     </aside>
   </div>
 
-
-
-
-
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
   <script src="assets/js/script.js"></script>
-
-
 </body>
 
 </html>
