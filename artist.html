@@ -2,26 +2,36 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/a.css" />
+
   <title>Artist Page</title>
 </head>
 
-<body>
+<body class="container-fluid">
   <!-- container di tutto -->
-  <div id="cont" class="row ">
+  <div id="cont" class="row">
     <!-- container della sezione centrale -->
-    <main class="col bg-dark order-2 pb-4 gx-0"
-      style='background: rgb(78,78,78);
-      background: linear-gradient(180deg, rgba(78,78,78,1) 0%, rgba(56,56,56,1) 27%, rgba(31,31,31,1) 47%, rgba(18,18,18,1) 69%);'><!-- style da spostare -->
+    <main class="col bg-dark order-2 pb-4 gx-0 " style="
+          background: rgb(78, 78, 78);
+          background: linear-gradient(
+            180deg,
+            rgba(78, 78, 78, 1) 0%,
+            rgba(56, 56, 56, 1) 27%,
+            rgba(31, 31, 31, 1) 47%,
+            rgba(18, 18, 18, 1) 69%
+          );
+        ">
+      <!-- style da spostare -->
 
       <div id="artistaCaricato" class="px-3">
         <!--top-bar parte sopra della canzone in primo piano -->
@@ -49,33 +59,44 @@
           <div class="col p-0 flex-grow"></div>
           <div class="col p-0 flex-grow"></div>
           <!-- dropdown -->
-          <div class=" dropdown p-0 rounded col ">
-            <button class="tastoUtente btn bg-black text-white dropdown-toggle " type="button" data-bs-toggle="dropdown"
-              aria-expanded="false"> <img src="https://via.placeholder.com/27" class="rounded-circle" alt="...">
+          <div class="dropdown p-0 rounded col">
+            <button class="tastoUtente btn bg-black text-white dropdown-toggle" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <img src="https://via.placeholder.com/27" class="rounded-circle" alt="..." />
               Lidia Nautilus Ambarabacci
             </button>
-            <ul class=" dropdown-menu dropdown-menu-dark ">
+            <ul class="dropdown-menu dropdown-menu-dark">
               <li>
                 <a class="menuaTendina dropdown-item bg-black" href="#">
                   Account
                   <span class="ml-5"><i class="bi bi-arrow-up-right-square"></i></span>
                 </a>
               </li>
-              <li><a class="menuaTendina dropdown-item bg-black" href="#">Profilo</a></li>
-              <li><a class="menuaTendina dropdown-item bg-black" href="#"> Effettua l'upgrade a premium
+              <li>
+                <a class="menuaTendina dropdown-item bg-black" href="#">Profilo</a>
+              </li>
+              <li>
+                <a class="menuaTendina dropdown-item bg-black" href="#">
+                  Effettua l'upgrade a premium
                   <span><i class="bi bi-arrow-up-right-square"></i></span></a>
               </li>
-              <li><a class="menuaTendina dropdown-item bg-black" href="#">Impostazioni</a></li>
               <li>
-                <hr class="dropdown-divider">
+                <a class="menuaTendina dropdown-item bg-black" href="#">Impostazioni</a>
               </li>
-              <li><a class="menuaTendina dropdown-item bg-black" href="#">Esci</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="menuaTendina dropdown-item bg-black" href="#">Esci</a>
+              </li>
             </ul>
           </div>
         </div>
         <div class="row pt-4">
           <div class="intestazioneArtist">
-            <p class="p-0"> <i class="bi bi-patch-check-fill"></i> Artista verificato</p>
+            <p class="p-0">
+              <i class="bi bi-patch-check-fill"></i> Artista verificato
+            </p>
             <h5 class="px-0">nomeartista</h5>
             <p class="mb-3 px-0">ascoltatori mensili</p>
           </div>
@@ -84,182 +105,220 @@
 
       <!-- container  sotto hero-->
       <div class="px-3 h-100">
-
         <!-- bottoni sotto hero -->
-        <div class="row mt-1">
-          <div class="col-12 artistButton p-0">
-            <button type="button" class="playBtn me-3 btn  text-success "><i
-                class="bi bi-play-circle-fill "></i></button>
+        <div class="mt-1 d-flex align-items-center">
+          <div class=" artistButton p-0 d-none d-md-flex">
+            <div>
+              
+              <button type="button" class="playBtn btn text-success">
+                <i class="bi bi-play-circle-fill"></i>
+              </button>
+              
+              <button type="button"
+                class="followBtn btn btn-dark text-#c2c2c2 border-white align-middle py-0 px-4 rounded-25  d-md-inline">
+                FOLLOW
+              </button>
+
+              
+              
+              <button type="button" class="threeDots btn fw-bold  fs-1 d-md-inline">
+                <i class="bi bi-three-dots"  style="color: #c2c2c2"></i>
+              </button>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class=" d-flex align-items-center justify-content-between d-md-none">
+
+          <div>
             <button type="button"
-              class="followBtn btn btn-dark text-white border-white align-middle py-0 px-4 rounded-25">FOLLOW</button>
-            <button type="button" class="threeDots btn fw-bold text-white fs-1"><i
-                class="bi bi-three-dots"></i></button>
+                class="followedBtn btn btn-dark text-#c2c2c2 border-white align-middle py-0 px-4 rounded-25 ">
+                Seguiti
+              </button>
+              <button type="button" class="threeDots btn fs-1 text-black"><i
+                class="bi bi-three-dots-vertical" style="color: #c2c2c2"></i></button>
+              
           </div>
-        </div>
-
-
-        <!-- griglia brani artist popolari e brani che ti piacciono - container generale-->
-        <div class="row flex-column-reverse flex-md-row gap-3 gx-0 ">
-
-          <!-- container popolari -->
-          <div id="tracce" class="col-7 p-0">
-            <h2 class="text-light fs-4 fw-bolder py-4 ">Popolari</h2>
-
-            <div class="row ms-1 align-items-center pb-3">
-
-              <div class="d-flex col-7 align-items-center ">
-                <div class="col-1 text-light">1</div>
-                <div class="col-2 me-2"><img src="assets/imgs/main/image-16.jpg" class="img-fluid" alt="img-album">
-                </div>
-
-                <div class="col text-light">
-                  <h6>Mark Chapman</h6>
-                </div>
-              </div>
-
-              <div class="col-3 text-light align-items-center">25/12/2055</div>
-              <div class="col text-light align-items-center">3:34</div>
-
-            </div>
-
-            <div class="row ms-1 align-items-center pb-3">
-
-              <div class="d-flex col-7 align-items-center ">
-                <div class="col-1 text-light">1</div>
-                <div class="col-2 me-2"><img src="assets/imgs/main/image-16.jpg" class="img-fluid" alt="img-album">
-                </div>
-
-                <div class="col text-light">
-                  <h6>Mark Chapman</h6>
-                </div>
-              </div>
-
-              <div class="col-3 text-light align-items-center">25/12/2055</div>
-              <div class="col text-light align-items-center">3:34</div>
-
-            </div>
-
-            <div class="row ms-1 align-items-center pb-3">
-
-              <div class="d-flex col-7 align-items-center ">
-                <div class="col-1 text-light">1</div>
-                <div class="col-2 me-2"><img src="assets/imgs/main/image-16.jpg" class="img-fluid" alt="img-album">
-                </div>
-
-                <div class="col text-light">
-                  <h6>Mark Chapman</h6>
-                </div>
-              </div>
-
-              <div class="col-3 text-light align-items-center">25/12/2055</div>
-              <div class="col text-light align-items-center">3:34</div>
-
-            </div>
-
-            <div class="row ms-1 align-items-center pb-3">
-
-              <div class="d-flex col-7 align-items-center ">
-                <div class="col-1 text-light">1</div>
-                <div class="col-2 me-2"><img src="assets/imgs/main/image-16.jpg" class="img-fluid" alt="img-album">
-                </div>
-
-                <div class="col text-light">
-                  <h6>Mark Chapman</h6>
-                </div>
-              </div>
-
-              <div class="col-3 text-light align-items-center">25/12/2055</div>
-              <div class="col text-light align-items-center">3:34</div>
-
-            </div>
-
-            <div class="row ms-1 align-items-center pb-3">
-
-              <div class="d-flex col-7 align-items-center ">
-                <div class="col-1 text-light">1</div>
-                <div class="col-2 me-2"><img src="assets/imgs/main/image-16.jpg" class="img-fluid" alt="img-album">
-                </div>
-
-                <div class="col text-light">
-                  <h6>Mark Chapman</h6>
-                </div>
-              </div>
-
-              <div class="col-3 text-light align-items-center">25/12/2055</div>
-              <div class="col text-light align-items-center">3:34</div>
-
-            </div>
-
-            <div class="row ms-1 align-items-center pb-3">
-
-              <div class="d-flex col-7 align-items-center ">
-                <div class="col-1 text-light">1</div>
-                <div class="col-2 me-2"><img src="assets/imgs/main/image-16.jpg" class="img-fluid" alt="img-album">
-                </div>
-
-                <div class="col text-light">
-                  <h6>Mark Chapman</h6>
-                </div>
-              </div>
-
-              <div class="col-3 text-light align-items-center">25/12/2055</div>
-              <div class="col text-light align-items-center">3:34</div>
-
-            </div>
-
-            <div class="row ms-1 align-items-center pb-3">
-
-              <div class="d-flex col-7 align-items-center ">
-                <div class="col-1 text-light">1</div>
-                <div class="col-2 me-2"><img src="assets/imgs/main/image-16.jpg" class="img-fluid" alt="img-album">
-                </div>
-
-                <div class="col text-light">
-                  <h6>Mark Chapman</h6>
-                </div>
-              </div>
-
-              <div class="col-3 text-light align-items-center">25/12/2055</div>
-              <div class="col text-light align-items-center">3:34</div>
-
-            </div>
-
-
-          </div>
-
-          <!-- container brani che ti piacciono -->
-          <div id="braniChetipiacc" class="col-4">
-            <h2 class="text-light fs-4 fw-bolder py-4">
-              Brani che ti piacciono
-            </h2>
-
-            <div class="row">
-              <div class="col-3"><img src="assets/imgs/main/image-7.jpg" class="img-fluid rounded-circle"
-                  alt="img-artist"></div>
-              <div class="col">
-                <h6 class="text-white">Hai messo mi piace a 11 brani</h6>
-                <p class="text-light fw-light">Di YellowCard</p>
-              </div>
-
-            </div>
-          </div>
-
-          <a href="#" class="pb-5 text-uppercase text-decoration-none text-light">visualizza altro</a>
-          <!-- div per le card da mostrare -->
-          <div class="row">
+          <div>
+            <button type="button" class=" btn">
+            <i class="fa-regular fa-shuffle" style="color: #3cb773;"></i>
+            </button>
+            <button type="button" class="playBtn btn text-success">
+              <i class="bi bi-play-circle-fill"></i>
+            </button>
+              
           </div>
 
         </div>
 
 
-      </div><!-- fine container  -->
 
 
 
+          <!-- griglia brani artist popolari e brani che ti piacciono - container generale-->
+          <div class="row flex-column-reverse flex-md-row gap-3 gx-0">
+            <!-- container popolari -->
+            <div id="tracce" class="col-7 p-0">
+              <h2 class="text-light fs-4 fw-bolder py-4">Popolari</h2>
+
+              <div class="row ms-1 align-items-center pb-3">
+                <div class="d-flex col-7 align-items-center">
+                  <div class="col-1 text-light">1</div>
+                  <div class="col-2 me-2">
+                    <img src="assets/imgs/main/image-16.jpg" class="img-fluid" alt="img-album" />
+                  </div>
+
+                  <div class="col text-light">
+                    <h6>Mark Chapman</h6>
+                  </div>
+                </div>
+
+                <div class="col-3 text-light align-items-center">
+                  25/12/2055
+                </div>
+                <div class="col text-light align-items-center">3:34</div>
+              </div>
+
+              <div class="row ms-1 align-items-center pb-3">
+                <div class="d-flex col-7 align-items-center">
+                  <div class="col-1 text-light">1</div>
+                  <div class="col-2 me-2">
+                    <img src="assets/imgs/main/image-16.jpg" class="img-fluid" alt="img-album" />
+                  </div>
+
+                  <div class="col text-light">
+                    <h6>Mark Chapman</h6>
+                  </div>
+                </div>
+
+                <div class="col-3 text-light align-items-center">
+                  25/12/2055
+                </div>
+                <div class="col text-light align-items-center">3:34</div>
+              </div>
+
+              <div class="row ms-1 align-items-center pb-3">
+                <div class="d-flex col-7 align-items-center">
+                  <div class="col-1 text-light">1</div>
+                  <div class="col-2 me-2">
+                    <img src="assets/imgs/main/image-16.jpg" class="img-fluid" alt="img-album" />
+                  </div>
+
+                  <div class="col text-light">
+                    <h6>Mark Chapman</h6>
+                  </div>
+                </div>
+
+                <div class="col-3 text-light align-items-center">
+                  25/12/2055
+                </div>
+                <div class="col text-light align-items-center">3:34</div>
+              </div>
+
+              <div class="row ms-1 align-items-center pb-3">
+                <div class="d-flex col-7 align-items-center">
+                  <div class="col-1 text-light">1</div>
+                  <div class="col-2 me-2">
+                    <img src="assets/imgs/main/image-16.jpg" class="img-fluid" alt="img-album" />
+                  </div>
+
+                  <div class="col text-light">
+                    <h6>Mark Chapman</h6>
+                  </div>
+                </div>
+
+                <div class="col-3 text-light align-items-center">
+                  25/12/2055
+                </div>
+                <div class="col text-light align-items-center">3:34</div>
+              </div>
+
+              <div class="row ms-1 align-items-center pb-3">
+                <div class="d-flex col-7 align-items-center">
+                  <div class="col-1 text-light">1</div>
+                  <div class="col-2 me-2">
+                    <img src="assets/imgs/main/image-16.jpg" class="img-fluid" alt="img-album" />
+                  </div>
+
+                  <div class="col text-light">
+                    <h6>Mark Chapman</h6>
+                  </div>
+                </div>
+
+                <div class="col-3 text-light align-items-center">
+                  25/12/2055
+                </div>
+                <div class="col text-light align-items-center">3:34</div>
+              </div>
+
+              <div class="row ms-1 align-items-center pb-3">
+                <div class="d-flex col-7 align-items-center">
+                  <div class="col-1 text-light">1</div>
+                  <div class="col-2 me-2">
+                    <img src="assets/imgs/main/image-16.jpg" class="img-fluid" alt="img-album" />
+                  </div>
+
+                  <div class="col text-light">
+                    <h6>Mark Chapman</h6>
+                  </div>
+                </div>
+
+                <div class="col-3 text-light align-items-center">
+                  25/12/2055
+                </div>
+                <div class="col text-light align-items-center">3:34</div>
+              </div>
+
+              <div class="row ms-1 align-items-center pb-3">
+                <div class="d-flex col-7 align-items-center">
+                  <div class="col-1 text-light">1</div>
+                  <div class="col-2 me-2">
+                    <img src="assets/imgs/main/image-16.jpg" class="img-fluid" alt="img-album" />
+                  </div>
+
+                  <div class="col text-light">
+                    <h6>Mark Chapman</h6>
+                  </div>
+                </div>
+
+                <div class="col-3 text-light align-items-center">
+                  25/12/2055
+                </div>
+                <div class="col text-light align-items-center">3:34</div>
+              </div>
+            </div>
+
+            <!-- container brani che ti piacciono -->
+            <div id="braniChetipiacc" class="col-12 col-md-4">
+              <h2 class="text-light fs-4 fw-bolder py-4 d-none d-md-flex">
+                Brani che ti piacciono
+              </h2>
+
+              <div class="row">
+                <div class="col-3">
+                  <img src="assets/imgs/main/image-7.jpg" class="img-fluid rounded-circle" alt="img-artist" />
+                </div>
+                <div class="col align-items-center">
+                  <div class="text-white d-md-none">Brani che ti piacciono</div>
+                  <h6 class="text-white d-none d-md-flex">
+                    Hai messo mi piace a 11 brani
+                  </h6>
+                  <p class="text-light fw-light">6 brani di YellowCard</p>
+                </div>
+              </div>
+            </div>
+
+            <a href="#" class="pb-5 text-uppercase text-decoration-none text-light">visualizza altro</a>
+            <!-- div per le card da mostrare -->
+            <div class="row"></div>
+          </div>
+        </div>
+        <!-- fine container  -->
     </main>
     <!-- Player-Spotify -->
     <section>
-      <div class="music-player sticky-player ">
+      <div class="music-player sticky-player">
         <div class="song-bar">
           <div class="song-infos">
             <div class="image-container">
@@ -425,11 +484,13 @@
               </li>
 
               <li>
-                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 93-94 </a>
+                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 93-94
+                </a>
               </li>
 
               <li>
-                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 94-95 </a>
+                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 94-95
+                </a>
               </li>
 
               <li>
@@ -477,7 +538,8 @@
               </li>
 
               <li>
-                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 02-03 </a>
+                <a href="#" class="list-sidebar nav-link">Zecchino d'oro Compilation 02-03
+                </a>
               </li>
 
               <li>
@@ -511,88 +573,89 @@
     </aside>
 
     <!-- sidebar destra friends -->
-    <aside id="rightBar" class=" col-2 order-3 bg-black ps-1">
+    <aside id="rightBar" class="col-2 order-3 bg-black ps-1">
       <div>
-
         <div id="friends" class="d-flex justify-content-between align-items-center py-4 ps-2">
-          <h6 class="fw-bold text-white m-0 ">Attività amici</h6>
+          <h6 class="fw-bold text-white m-0">Attività amici</h6>
           <div class="text-secondary fs-5 d-flex align-items-center">
             <span><i class="icon-friends-top bi bi-person-add me-2"></i></span>
-            <span id="close-friends"><i class="icon-friends-top bi bi-x pe-2"></i> </span>
+            <span id="close-friends"><i class="icon-friends-top bi bi-x pe-2"></i>
+            </span>
           </div>
         </div>
 
         <div id="friends-list" class="row d-flex align-items-center mb-3 p-0 pt-4 ps-2">
-          <div class=" col pe-0">
-            <img src="https://via.placeholder.com/30" class="rounded-circle" alt="...">
+          <div class="col pe-0">
+            <img src="https://via.placeholder.com/30" class="rounded-circle" alt="..." />
           </div>
 
-
           <div class="d-flex flex-column col-6 p-0">
-            <h6 class="title-friends mb-0 pt-1  flex-nowrap">Charlie Hookham</h6>
-            <p class="para-friends mb-0 pt-1   flex-nowrap">In Camera • Yuni Zooma</p>
-            <p class="para-friends text-uppercase "> <span> <i class="bi bi-disc"></i>
-              </span>Ep IIII</p>
+            <h6 class="title-friends mb-0 pt-1 flex-nowrap">
+              Charlie Hookham
+            </h6>
+            <p class="para-friends mb-0 pt-1 flex-nowrap">
+              In Camera • Yuni Zooma
+            </p>
+            <p class="para-friends text-uppercase">
+              <span> <i class="bi bi-disc"></i> </span>Ep IIII
+            </p>
           </div>
 
           <div class="col">
-            <p class="para-friends flex-nowrap p-0 ">4 ore</p>
-          </div>
-        </div>
-
-
-        <div class="row d-flex align-items-center mb-3 p-0 ps-2">
-          <div class=" col pe-0">
-            <img src="https://via.placeholder.com/30" class="rounded-circle" alt="...">
-          </div>
-
-
-          <div class="d-flex flex-column col-6 p-0">
-            <h6 class="title-friends mb-0 pt-1  flex-nowrap">Valeria Traverso</h6>
-            <p class="para-friends mb-0 pt-1   flex-nowrap">New Kings • Sleeping Wolf</p>
-            <p class="para-friends  "> <span> <i class="bi bi-music-note-beamed"></i>
-              </span>Twint Badass mood</p>
-          </div>
-
-          <div class="col">
-            <p class="para-friends flex-nowrap p-0 ">3 giorni</p>
+            <p class="para-friends flex-nowrap p-0">4 ore</p>
           </div>
         </div>
 
         <div class="row d-flex align-items-center mb-3 p-0 ps-2">
-          <div class=" col pe-0">
-            <img src="https://via.placeholder.com/30" class="rounded-circle" alt="...">
+          <div class="col pe-0">
+            <img src="https://via.placeholder.com/30" class="rounded-circle" alt="..." />
           </div>
 
-
           <div class="d-flex flex-column col-6 p-0">
-            <h6 class="title-friends mb-0 pt-1  flex-nowrap">lightdark02</h6>
-            <p class="para-friends mb-0 pt-1   flex-nowrap">Aimed to Kill • Jade LeMac</p>
-            <p class="para-friends  "> <span> <i class="bi bi-disc"></i>
-              </span>Aimed to Kill</p>
+            <h6 class="title-friends mb-0 pt-1 flex-nowrap">
+              Valeria Traverso
+            </h6>
+            <p class="para-friends mb-0 pt-1 flex-nowrap">
+              New Kings • Sleeping Wolf
+            </p>
+            <p class="para-friends">
+              <span> <i class="bi bi-music-note-beamed"></i> </span>Twint
+              Badass mood
+            </p>
           </div>
 
           <div class="col">
-            <p class="para-friends flex-nowrap p-0 ">8 ore</p>
+            <p class="para-friends flex-nowrap p-0">3 giorni</p>
           </div>
         </div>
 
+        <div class="row d-flex align-items-center mb-3 p-0 ps-2">
+          <div class="col pe-0">
+            <img src="https://via.placeholder.com/30" class="rounded-circle" alt="..." />
+          </div>
+
+          <div class="d-flex flex-column col-6 p-0">
+            <h6 class="title-friends mb-0 pt-1 flex-nowrap">lightdark02</h6>
+            <p class="para-friends mb-0 pt-1 flex-nowrap">
+              Aimed to Kill • Jade LeMac
+            </p>
+            <p class="para-friends">
+              <span> <i class="bi bi-disc"></i> </span>Aimed to Kill
+            </p>
+          </div>
+
+          <div class="col">
+            <p class="para-friends flex-nowrap p-0">8 ore</p>
+          </div>
+        </div>
       </div>
     </aside>
-
   </div>
-
-
-
-
-
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
   <script src="script.js"></script>
-
-
 </body>
 
 </html>

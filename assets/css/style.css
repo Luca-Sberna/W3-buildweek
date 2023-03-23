@@ -362,14 +362,10 @@ p {
     text-decoration: underline;
 }
 
-
-
-
 .artistButton button.play {
     background: transparent;
     font-size: 3em;
     color: #1db954;
-    text-align: center;
 }
 
 .artistButton button.follow {
@@ -380,6 +376,16 @@ p {
     aspect-ratio: auto;
     padding: 6px 10px;
 }
+.artistButton button.followedBtn {
+    border: none;
+    font-size: 12px;
+    font-weight: 300;
+    border-radius: 5px;
+    aspect-ratio: auto;
+    padding: 6px 10px;
+    background-color: transparent;
+}
+
 
 .artistButton button.follow:hover {
     border: 1px inset white;
@@ -608,3 +614,4 @@ i:hover {
 .volume-bar .progress-bar:hover .progress::after {
     --size: 0.8em;
 }
+
