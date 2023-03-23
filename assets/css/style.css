@@ -30,7 +30,7 @@ body {
   white-space: nowrap;
 }
 
-#homepage-body {
+main {
   height: 100vh;
   margin-bottom: 0;
   overflow-y: scroll;
