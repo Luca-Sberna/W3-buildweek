@@ -293,7 +293,6 @@ p {
 .playBtn:hover {
     transform: scale(1.05);
     color: white;
-
 }
 
 .threeDots {
