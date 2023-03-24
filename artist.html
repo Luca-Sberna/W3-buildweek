@@ -16,10 +16,10 @@
 </head>
 
 <body>
-  <div class="container-fluid p-0">
+  <div class="container-fluid d-flex p-0">
     <div class="row">
       <!-- container di tutto -->
-      <div id="cont" class="container-fluid row p-0">
+      <div id="cont" class="container d-flex row p-0">
         <!-- container della sezione centrale -->
         <main class="col bg-dark order-2  md-4 gx-0">
        
@@ -66,7 +66,7 @@
                 </ul>
               </div>
             </div>
-            <div class="row pt-4">
+            <div class="row  pt-4">
               <div class="intestazioneArtist">
                 <p class="p-0"><i class="bi bi-patch-check-fill"></i> Artista verificato</p>
                 <h5 class="px-0 text-break">nomeartista</h5>
@@ -78,20 +78,27 @@
           <!-- container  sotto hero-->
           <div class="px-3 h-100">
             <!-- bottoni sotto hero -->
-            <div class="row mt-1">
-              <div class="col-12 artistButton p-0">
-                <button type="button" class="playBtn me-3 btn text-success">
+            <div class="row mt-1 justify-content-between align-items-center">
+              <div class="col-12 artistButton p-0 d-flex align-items-center">
+                <button type="button" class="playBtn me-3 d-none d-md-block btn text-success">
                   <i class="bi bi-play-circle-fill"></i>
                 </button>
-                <button type="button"
-                  class="followBtn btn btn-dark text-white border-white align-middle py-2 px-4 rounded-25">
+                <button type="button" class="followBtn btn btn-dark text-white border-white align-middle d-block py-2 px-4 rounded-25">
                   FOLLOW
                 </button>
-                <button type="button" class="threeDots btn fw-bold text-white fs-1">
+                <button type="button" class="threeDots btn fw-bold text-white fs-1" id="rotateButton">
                   <i class="bi bi-three-dots"></i>
+                </button>
+                
+                <button type="button" class=" d-md-none btn ms-auto">
+                  <i class="bi bi-shuffle text-secondary fs-1"></i>
+                </button>
+                <button type="button" class="d-md-none playBtn btn text-success">
+                  <i class="bi bi-play-circle-fill"></i>
                 </button>
               </div>
             </div>
+            
 
             <!-- griglia brani artist popolari e brani che ti piacciono - container generale-->
             <div class="row flex-column-reverse flex-md-row gap-3 gx-0">
@@ -228,7 +235,7 @@
                 </div>
               </div>
 
-              <a href="#" class="pb-5 text-uppercase text-decoration-none text-light">visualizza altro</a>
+              <a href="#" class="pb-8 text-uppercase d-block text-decoration-none text-light">visualizza altro</a>
               <!-- div per le card da mostrare -->
               <div class="row"></div>
             </div>
@@ -506,13 +513,13 @@
         </aside>
     
         <!-- sidebar destra friends -->
-        <aside id="rightBar" class="d-none d-lg-block col-lg-2 order-3 bg-black ps-1">
-          <div class="">
+        <aside id="rightBar" class="friends d-none d-md-flex  col-lg-2 order-3 bg-black ps-1">
+          <div class="unwr">
             <div id="friends" class="d-flex justify-content-between align-items-center py-4 ps-2">
               <h6 class="fw-bold text-white m-0">Attività amici</h6>
               <div class="text-secondary fs-5 d-flex align-items-center">
                 <span><i class="icon-friends-top bi bi-person-add me-2"></i></span>
-                <span id="close-friends"><i class="icon-friends-top bi bi-x pe-2"></i> </span>
+                <span id="close-friends" type="button btn"><i class="icon-friends-top bi bi-x pe-2"></i> </span>
               </div>
             </div>
     

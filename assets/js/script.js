@@ -1,7 +1,7 @@
-const ulrArtist = " https://striveschool-api.herokuapp.com/api/deezer/artist/";
+const ulrArtist = " https://striveschool-api.herokuapp.com/api/deezer/artist/412";
 let params = new URLSearchParams(location.search);
 
-let ourIDArtist = params.get("id");
+let ourIDArtist = (params.get("id"));
 
 
 const returnMinute = function (sec) {
@@ -98,11 +98,8 @@ const fetchUrlArtist = async function () {
 };
 fetchUrlArtist();
 
-const closeFriends_btn = document.querySelector("#close-friends");
-
-const mostraAmici = function () {
-  const aside = document.querySelector("#rightBar");
-  aside.classList.toggle("d-xl-block");
-};
-
-closeFriends_btn.onclick = mostraAmici;
+const closeBtn = document.getElementById("close-friends");
+  const sidebar = document.getElementById("rightBar");
+  closeBtn.addEventListener("click", () => {
+    sidebar.classList.add("d-none");
+  });

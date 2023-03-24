@@ -20,7 +20,10 @@
 body {
   overflow: hidden;
 }
+#rightBar {
+  padding-right: 0;
 
+}
 #content {
   z-index: 100;
   background-color: rgb(222, 192, 79);
@@ -65,6 +68,15 @@ main {
 
 .second-section {
   background-color: #3e3e3e;
+}
+
+.rotate-180 {
+  transform: rotate(90deg);
+}
+@media (max-width: 768px) {
+  #rotateButton {
+    transform: rotate(90deg);
+  }
 }
 
 @media (max-width: 768px) {
