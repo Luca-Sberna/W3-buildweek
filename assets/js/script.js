@@ -31,14 +31,6 @@
 //     const albumDuration = document.getElementById("album-duration");
 //     albumDuration.innerText = album.duration;
 
-// Scomparsa sidebar destra
-const closeButton = document.querySelector(".nascondiAnnunci");
-const asideElement = document.querySelector("#cont-song");
-
-closeButton.addEventListener("click", () => {
-  asideElement.style.display = "none";
-});
-
 // recupera l'id dell'album dai search params
 const searchParams = new URLSearchParams(window.location.search);
 const albumId = searchParams.get("id");
