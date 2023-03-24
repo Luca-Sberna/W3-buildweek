@@ -36,6 +36,14 @@ main {
     overflow-y: scroll;
     overflow-x: hidden;
     z-index: 99;
+    background: rgb(78, 78, 78);
+    background: linear-gradient(
+      180deg,
+      rgba(78, 78, 78, 1) 0%,
+      rgba(56, 56, 56, 1) 27%,
+      rgba(31, 31, 31, 1) 47%,
+      rgba(18, 18, 18, 1) 69%
+    );
 }
 
 #cont-song {
