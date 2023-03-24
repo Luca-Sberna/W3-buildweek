@@ -1,7 +1,6 @@
 const urlParams = new URLSearchParams(window.location.search);
 const artistId = urlParams.get("id");
-const ulrArtist =
-  " https://striveschool-api.herokuapp.com/api/deezer/artist";
+const urlArtist = `https://striveschool-api.herokuapp.com/api/deezer/artist/${artistId}`;
 
   
 const returnMinute = function (sec) {
@@ -15,13 +14,16 @@ const returnMinute = function (sec) {
 };
 
 const caricaArtista = document.getElementById("artistaCaricato");
-const fetchUrlArtist = async function () {
+fetch ('https://striveschool-api.herokuapp.com/api/deezer/artist/412')
+.then(response => response.json())
+.then(data => {
+
   try {
-    let res = await fetch(`${ulrArtist}/${artistId}`);
+    let res = fetch(`${urlArtist}/${artistId}`);
     if (res.ok) {
-      const artista = await res.json();
-      let tracklist = await fetch(artista.tracklist);
-      const tracks = await tracklist.json();
+      const artista = res.json();
+      let tracklist = fetch(artista.tracklist);
+      const tracks = tracklist.json();
 
       caricaArtista.innerHTML += `
        <div class="row pt-4 ">
@@ -93,9 +95,8 @@ const fetchUrlArtist = async function () {
 
   } catch (error) {
     console.log(error);
-  }
-};
-fetchUrlArtist();
+  }  
+});
 
 const closeBtn = document.getElementById("close-friends");
 const sidebar = document.getElementById("rightBar");
