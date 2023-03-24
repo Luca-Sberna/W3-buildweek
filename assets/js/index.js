@@ -81,59 +81,28 @@ const deleteAlbumReplies = objBody => {
   return arrObj;
 };
 
-/**
- * Fn template per coding-music section
- * ----------------------------------------------------------------------------
- */
-const templateCodingMusic = card => {
+const firstSectionCard = card => {
   let template = `
-      <div class="col">
-        <div class="goodCard">
-          <a href="album.html?id=${card.idAlbum}"><img src="${card.urlAlbum}" class="img-fluid" alt=""></a>
-          <div class="goodCard-body">
-            <a href="album.html?id=${card.idAlbum}">
-              <h3 class="card-title">${card.titleAlbum}</h3>
-            </a>
-            <div class="goodCard-play shadow-lg">
-              <svg role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24"
-                data-encore-id="icon" class="Svg-sc-ytk21e-0 uPxdw">
-                <path
-                  d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z">
-                </path>
-              </svg>
-            </div>
-          </div>
-        </div>
+  <div class="col mb-2 p-0 px-2">
+  <div class="card bg-transparent">
+    <div class="first-section col p-0 d-flex align-items-center rounded">
+      <div class="col-4">
       </div>
+      <div class="col-8">
+      <h6 class="m-0 ps-1 text-light text-truncate">${n}</h6>
+      </div>
+      <img class="img-fluid rounded-start" src="${n}" alt="${n}" />
+    </div>
+  </div>
+</div>
     `;
   return template;
 };
 
-/**
- * Fn template per artist section
- * ----------------------------------------------------------------------------
- */
-const templateSinger = card => {
-  let template = `
-      <div class="card p-3">
-        <a href="album.html?id=${card.idAlbum}"><img src="${card.urlAlbum}" class="card-img-top img-fluid mb-3" alt=""></a>
-        <div class="card-body p-0">
-          <a href="album.html?id=${card.idAlbum}"><h3 class="card-title">${card.titleAlbum}</h3></a>
-          <a href="artist.html?id=${card.idArtist}"><p class="card-text m-0">${card.nameArtist}</p></a>
-        </div>
-      </div>
-    `;
-  return template;
-};
-
-/**
- * Fn per creare le singole card
- * ----------------------------------------------------------------------------
- */
-const createAlbum = async (elementi, singer) => {
+const createAlbum = async (elementi, artist) => {
   if (elementi) {
     // seleziono la section con id specifico del cantante di cui andrò ad inserire gli album
-    const albums = document.querySelector(`#${singer} div`);
+    const albums = document.querySelector(`#${artist} div`);
     console.log(albums);
 
     albums.innerHTML = "";
@@ -149,7 +118,7 @@ const createAlbum = async (elementi, singer) => {
         column.classList.add("d-none", "d-xxl-block");
       }
 
-      column.innerHTML = singer === "coding-music" ? templateCodingMusic(card) : templateSinger(card);
+      column.innerHTML = artist === "coding-music" ? firstSectionCard(card) : templateSinger(card);
 
       albums.appendChild(column);
     });
