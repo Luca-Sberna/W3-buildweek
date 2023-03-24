@@ -67,7 +67,7 @@
       <!-- container canzone in primo piano -->
 
       <!-- header -->
-      <div class="container">
+      <div class="container" id="album-details">
         <div class="row pt-3">
           <div class="col-12 col-md-4">
             <img class=" img-fluid mx-auto text-center d-sm-flex align-items-center" src="assets/imgs/main/image-8.jpg"
@@ -77,11 +77,9 @@
             <!-- content -->
             <h4 class="text-uppercase text-white d-md-block d-sm-none fs-6">Album</h4>
             <h1 class="title-album text-white">Gioventù Bruciata</h1>
-            <p class="text-white text-sm d-none d-md-block mt-2"><img src="https://via.placeholder.com/25"
+            <p class="text-white d-md-block mt-2"><img src="https://via.placeholder.com/25"
                 class="rounded-circle" alt="...">Pinguini Tattici Nucleari • 2017 • 12 Brani, 53 min 20 sec</p>
-            <p class="text-white text-sm mt-2 d-block d-md-none"><img src="https://via.placeholder.com/25"
-                class="rounded-circle" alt="...">Pinguini Tattici Nucleari</p>
-
+           
             <h4 class="text-white d-md-none d-sm-block mt-3 fs-6">Album • 2017</h4>
           </div>
 
@@ -135,6 +133,8 @@
 
 
             <!-- song list   -->
+
+
             <div class="mt-4 p-0 scroll overflow-x-hidden d-none d-md-block">
               <!-- song list header -->
               <div class="d-flex border-bottom text-white text-uppercase row ">
@@ -145,6 +145,8 @@
               </div>
             </div>
 
+
+            <div id="playlist" class="text-white">
             <div class="d-flex text-white align-items-center row">
               <div class="col-1 d-none d-md-block">1</div>
               <div class="p-3 flex-grow-1 col-6 ">
@@ -275,6 +277,7 @@
               <div class="p-3 w-12 flex-shrink-0  col-1 d-none d-md-block">1:35</div>
             </div>
           </div>
+        </div>
 
           <!-- Player-Spotify -->
           <div class="music-player mt-5 sticky-player d-none d-md-flex">
@@ -635,7 +638,7 @@
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
   <script src="assets/js/script.js"></script>
-
+<script src="assets/js/album.js"></script>
 </body>
 
 
