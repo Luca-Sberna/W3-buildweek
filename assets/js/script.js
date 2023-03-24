@@ -1,7 +1,7 @@
 const urlParams = new URLSearchParams(window.location.search);
 const artistId = urlParams.get("id");
 const ulrArtist =
-  " https://striveschool-api.herokuapp.com/api/deezer/artist/412";
+  " https://striveschool-api.herokuapp.com/api/deezer/artist";
 
 const returnMinute = function (sec) {
   const minute = Math.floor(sec / 60);
@@ -101,4 +101,5 @@ const sidebar = document.getElementById("rightBar");
 closeBtn.addEventListener("click", () => {
   sidebar.classList.add("d-none");
 });
+
 
