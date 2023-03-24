@@ -2,7 +2,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const albumId = urlParams.get("id");
 
 // Recupera i dettagli dell'album dall'API di Deezer
-fetch(`https://striveschool-api.herokuapp.com/api/deezer/album/418774237`)
+fetch(`https://striveschool-api.herokuapp.com/api/deezer/album/75621062`)
   .then(response => response.json())
   .then(album => {
     // Aggiorna il titolo dell'album
@@ -19,7 +19,7 @@ fetch(`https://striveschool-api.herokuapp.com/api/deezer/album/418774237`)
   })
   .catch(error => console.error(error));
 
-fetch("https://striveschool-api.herokuapp.com/api/deezer/album/418774237")
+fetch("https://striveschool-api.herokuapp.com/api/deezer/album/75621062")
   .then(response => response.json())
   .then(data => {
     const tracks = data.tracks.data;
