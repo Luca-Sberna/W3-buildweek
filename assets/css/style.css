@@ -40,14 +40,12 @@ main {
 
 #cont-song {
   background: rgb(57, 57, 57);
-  background: linear-gradient(
-    191deg,
-    rgba(57, 57, 57, 1) 0%,
-    rgba(42, 42, 42, 1) 0%,
-    rgba(23, 23, 23, 1) 32%,
-    rgba(10, 10, 10, 1) 68%,
-    rgba(0, 0, 0, 1) 100%
-  );
+  background: linear-gradient(191deg,
+      rgba(57, 57, 57, 1) 0%,
+      rgba(42, 42, 42, 1) 0%,
+      rgba(23, 23, 23, 1) 32%,
+      rgba(10, 10, 10, 1) 68%,
+      rgba(0, 0, 0, 1) 100%);
 }
 
 .nascondiAnnunci {
@@ -304,8 +302,10 @@ p {
 .threeDots.btn:hover,
 .playBtn:hover,
 img:hover,
+#album:hover,
 .second-section:hover,
-.first-section:hover {
+.first-section:hover,
+.title-song:hover {
   transform: scale(1.05);
   transition: 0.2s ease-in-out;
   color: white;
@@ -387,11 +387,13 @@ img:hover,
   color: white;
 }
 
-.artistiNomi {
+.artistiNomi,
+#album {
   text-decoration: none;
 }
 
-.artistiNomi:hover {
+.artistiNomi:hover,
+#album:hover {
   text-decoration: underline;
 }
 
@@ -647,6 +649,7 @@ i:hover {
 }
 
 @media screen and (max-width: 767px) {
+
   /* dimensione del font per schermi mobili */
   .title-album {
     font-size: 2rem;

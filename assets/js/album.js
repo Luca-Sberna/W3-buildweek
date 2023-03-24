@@ -45,3 +45,4 @@ fetch("https://striveschool-api.herokuapp.com/api/deezer/album/75621062")
     });
   })
   .catch(error => console.log(error));
+ */
