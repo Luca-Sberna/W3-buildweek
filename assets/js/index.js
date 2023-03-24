@@ -125,10 +125,6 @@ const createAlbum = async (elementi, artist) => {
   }
 };
 
-/**
- * Fn che recupera ID dell'artista
- * ----------------------------------------------------------------------------
- */
 const fetchData = async name => {
   const nameClear = name.toLowerCase().replace(/[^a-zA-Z0-9]/g, "");
 
