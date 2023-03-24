@@ -1,49 +1,9 @@
 const urlParams = new URLSearchParams(window.location.search);
 const artistId = urlParams.get("id");
-const ulrArtist = " https://striveschool-api.herokuapp.com/api/deezer/artist";
-async function fetchArtistData(artistId) {
-  const artistResponse = await fetch(
-    ` https://striveschool-api.herokuapp.com/api/deezer/artists/${artistId}`
-  );
-  const artistData = await artistResponse.json();
+const ulrArtist =
+  " https://striveschool-api.herokuapp.com/api/deezer/artist";
 
-  const tracksResponse = await fetch(
-    ` https://striveschool-api.herokuapp.com/api/deezer/tracks/${artistId}`
-  );
-  const tracksData = await tracksResponse.json();
-
-  return {
-    artist: artistData,
-    tracks: tracksData,
-  };
-}
-
-async function populatePageWithArtistData(artistId) {
-  const { artist, tracks } = await fetchArtistData(artistId);
-
-  document.querySelector("#artist-image").src = artist.image_url;
-  document.querySelector("#artist-name").textContent = artist.name;
-  document.querySelector("#artist-description").textContent =
-    artist.description;
-
-  const trackList = document.querySelector("#track-list");
-  trackList.innerHTML = "";
-  tracks.forEach((track) => {
-    const trackItem = document.createElement("li");
-    trackItem.innerHTML = `
-      <div class="track-title">${track.title}</div>
-      <div class="track-duration">${track.duration}</div>
-    `;
-    trackList.appendChild(trackItem);
-  });
-}
-
-window.addEventListener("load", () => {
-  const urlParams = new URLSearchParams(window.location.search);
-  const artistId = urlParams.get("id");
-  populatePageWithArtistData(artistId);
-});
-
+  
 const returnMinute = function (sec) {
   const minute = Math.floor(sec / 60);
   let restSeconds = sec - minute * 60;
@@ -124,11 +84,13 @@ const fetchUrlArtist = async function () {
                   <p class="text-end pe-4">${returnMinute(el.duration)}</p>
                 </div>
               </div>`;
-        document.getElementById("artistaCaricato").appendChild;
+              document.getElementById("artistaCaricato").appendChild
       });
 
       return artista;
+
     }
+
   } catch (error) {
     console.log(error);
   }
@@ -140,3 +102,5 @@ const sidebar = document.getElementById("rightBar");
 closeBtn.addEventListener("click", () => {
   sidebar.classList.add("d-none");
 });
+
+
