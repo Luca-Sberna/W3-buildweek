@@ -37,8 +37,8 @@ fetch("https://striveschool-api.herokuapp.com/api/deezer/album/418774237")
           <h6 class="fw-bold">${track.title}</h6>
           <p class="fs-6">${track.artist.name}</p>
         </div>
-        <div class="p-3 flex-grow-1 col-3 d-none d-md-block">${track.duration}</div>
-        <div class="p-3 w-12 flex-shrink-0 col-1 d-none d-md-block">${track.duration}</div>
+        <div class="p-3 flex-grow-1 col-3 d-none d-md-block">${track.rank}</div>
+        <div class="p-3 w-12 flex-shrink-0 col-1 d-none d-md-block">${track.duration}sec</div>
       `;
       document.getElementById("playlist").appendChild(trackDiv);
       trackNumber++;
