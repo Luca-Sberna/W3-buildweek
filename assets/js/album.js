@@ -1,4 +1,3 @@
-// Recupera l'id dell'album dalla query string
 const urlParams = new URLSearchParams(window.location.search);
 const albumId = urlParams.get("id");
 
