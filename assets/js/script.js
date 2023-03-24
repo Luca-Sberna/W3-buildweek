@@ -1,8 +1,7 @@
-const ulrArtist = " https://striveschool-api.herokuapp.com/api/deezer/artist/412";
-let params = new URLSearchParams(location.search);
-
-let ourIDArtist = (params.get("id"));
-
+const urlParams = new URLSearchParams(window.location.search);
+const artistId = urlParams.get("id");
+const ulrArtist =
+  " https://striveschool-api.herokuapp.com/api/deezer/artist/412";
 
 const returnMinute = function (sec) {
   const minute = Math.floor(sec / 60);
@@ -14,18 +13,16 @@ const returnMinute = function (sec) {
   return time;
 };
 
-
-
 const caricaArtista = document.getElementById("artistaCaricato");
 const fetchUrlArtist = async function () {
   try {
-    let res = await fetch(`${ulrArtist}/${ourIDArtist}`);
+    let res = await fetch(`${ulrArtist}/${artistId}`);
     if (res.ok) {
       const artista = await res.json();
       let tracklist = await fetch(artista.tracklist);
       const tracks = await tracklist.json();
 
-      artistaCaricato.innerHTML += `
+      caricaArtista.innerHTML += `
        <div class="row pt-4 ">
              <div style="background-image: url(${artista.picture_big}) ;" class="intestazioneArtist">
              <p> <i class="bi bi-patch-check-fill"></i> Artista verificato</p>
@@ -40,8 +37,6 @@ const fetchUrlArtist = async function () {
                 <button><i class="bi bi-three-dots"></i></button>
               </div>
             </div>`;
-
-            
 
       const elencoTracce = document.getElementById("tracce");
       const elencobraniChetipiacc = document.getElementById("braniChetipiacc");
@@ -88,10 +83,13 @@ const fetchUrlArtist = async function () {
                   <p class="text-end pe-4">${returnMinute(el.duration)}</p>
                 </div>
               </div>`;
+              document.getElementById("artistaCaricato").appendChild
       });
 
       return artista;
+
     }
+
   } catch (error) {
     console.log(error);
   }
@@ -99,7 +97,8 @@ const fetchUrlArtist = async function () {
 fetchUrlArtist();
 
 const closeBtn = document.getElementById("close-friends");
-  const sidebar = document.getElementById("rightBar");
-  closeBtn.addEventListener("click", () => {
-    sidebar.classList.add("d-none");
-  });
+const sidebar = document.getElementById("rightBar");
+closeBtn.addEventListener("click", () => {
+  sidebar.classList.add("d-none");
+});
+
